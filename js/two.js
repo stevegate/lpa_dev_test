@@ -1,11 +1,5 @@
 // JavaScript Document
 	$(document).one('pagecreate', '#pagetwo', function(){  
-		//alert('width' + $(window).width());
-		//alert('height' + $(window).height());
-		//alert('body height' + $(body).height());
-		//alert('body width' + $(body).width());
-		//$("#testpopup").dialog();
-		//$.mobile.changePage('#pagetwo', {transition: 'pop', role: 'testpopup'}); 
 
 		userobject = 	JSON.parse(sessionStorage.getItem("user_data"));	
 		$('#emplyee_name_two').text(''+userobject.firstname+' '+userobject.lastname);
@@ -26,7 +20,6 @@
 
 		
 		$(document).off('click', '#lpa_update_one').on('click', '#lpa_update_one', function() { 
-			// alert('testing update page');
 			$.mobile.changePage("update_one.html", { transition: "slide", changeHash: true, reverse: false }); 
 			return false;
 		});
@@ -34,14 +27,12 @@
 
 		$(document).off('click', '#two_signout').on('click', '#two_signout', function() {
 			sessionStorage.clear(); 
-			// alert('testing update page');
 			$.mobile.changePage("index.html", { transition: "slide", changeHash: true, reverse: false }); 
 			return false;
 		});
 		
 		
 		$(document).off('click', '#feedback_submit').on('click', '#feedback_submit', function() { // catch the form's submit event
-			//alert('test');
             if($('#feedback').val().length > 0){
 				userdata = JSON.parse(sessionStorage.getItem("user_data"));
 
@@ -60,13 +51,11 @@
 							$.mobile.loading().hide();// This will hide ajax spinner
                         },
                         success: function (result) {
-							//console.log(result);
 							if(result[0]){
 								alert('details submitted successfully');
 								$("#feedback_form").trigger('reset');
 								$('#myPopup').popup('close'); 
 							}else {
-								//alert('incorrect details provided');
 								alert('Network error has occurred please try again!');
 
 							}
@@ -88,27 +77,8 @@
 	
 	
 	
-		/*var on = false;  
-		$("html").click( function( e )
-		{
-		if( $(".ui-panel").hasClass("ui-panel-open") == true  && !on){
-				on = true
-		}else{
-				on = false;
-				$( "#two_overlayPanel" ).panel( "close" );        
-		}		
-		});*/
-
-	
-	
-	
 	function changepage(){
-		
-			//alert('page2');
-			$.mobile.changePage("three.html", { transition: "slide", changeHash: true, reverse: false }); 
-			//return false;
-
-		
+				$.mobile.changePage("three.html", { transition: "slide", changeHash: true, reverse: false }); 
 	}
 	
 	

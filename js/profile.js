@@ -1,10 +1,4 @@
-// JavaScript Document
-
-	
-
-
-
-	$(document).one('pageshow', '#profile', function(e){  
+$(document).one('pageshow', '#profile', function(e){  
 	
 				 assignProfileValues();
 
@@ -13,34 +7,19 @@
 						$('#profile').remove();
 						
 
-						$.mobile.changePage("three.html", { transition: "slide", changeHash: false, reverse: false });							 						
-						//e.handled=true;
+						$.mobile.changePage("three.html", { transition: "slide", changeHash: true, reverse: false });							 						
 						e1.stopPropagation();
 		   				e1.preventDefault();
-								
 						return false;
-
-
-						/*if(!e.handled){
-						$('#pagethree').remove();
-						
-						
-		   				e.preventDefault();
-						}*/
-
 
 				});
 	
 				$(document).off('click', '#profile_update').on('click','#profile_update',function(e){
-						//console.log('profile ' + e.handled);
 						if(!e.handled){
 						$('#pagethree').remove();
-						//alert('click');
-						$.mobile.changePage("update_one.html", { transition: "slide", changeHash: false, reverse: false });							 						e.handled=true;
-						//e.stopPropagation();
-						
-						
-		   				//e.preventDefault();
+
+						$.mobile.changePage("update_one.html", { transition: "slide", changeHash: true, reverse: false });							 						e.handled=true;
+
 						}
 
 						return false;
@@ -49,7 +28,6 @@
 
 				$(document).off('click', '#profile_signout').on('click', '#profile_signout', function() {
 					sessionStorage.clear(); 
-					// alert('testing update page');
 					$.mobile.changePage("index.html", { transition: "slide", changeHash: true, reverse: false }); 
 					return false;
 				});

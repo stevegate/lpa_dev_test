@@ -13,7 +13,7 @@
 
 <link rel="stylesheet" href="css/jquery.mobile.datepicker.css">
 <!--datepicker end-->
-<link href='css/googlefonts' rel='stylesheet' type='text/css'>
+<link href='css/googlefonts.css' rel='stylesheet' type='text/css'>
 <link href='css/mobil.css' rel='stylesheet' type='text/css'>
 </head>
 
@@ -35,29 +35,27 @@
 <!--panel slider-->
 <div data-role="panel" id="overlayPanel_update_one" data-display="overlay" data-position="right" data-dismissible="true" data-swipe-close="false"> 
       <ul data-role="listview" data-inset="true">
-      <li id="update_one_profile"><a href="#" class="ui-btn ui-icon-carat-l ui-btn-icon-left">My Profile</a></li>
-      <li id="update_one_create"><a href="#" class="ui-btn ui-icon-carat-l ui-btn-icon-left" >Create LPA</a></li>
-      <li><a href="#" class="ui-btn ui-icon-carat-l ui-btn-icon-left" >Update LPA</a></li>
-      <!--<li><a href="#" class="ui-btn ui-icon-carat-l ui-btn-icon-left">Reports</a></li>-->
+      <li><a href="#" id="update_one_profile" class="ui-btn ui-icon-carat-l ui-btn-icon-left">My Profile</a></li>
+      <li><a href="#" id="update_one_create" class="ui-btn ui-icon-carat-l ui-btn-icon-left" >Create LPA</a></li>
       </ul>
       <a href="#" id="update_one_signout" class="ui-btn ui-icon-power ui-btn-icon-left">Sign Out</a>
 </div> <!--page slider end-->
 
 <!--content page-->
-<div data-role="main" class="ui-content cin" >
+<div data-role="main" class="ui-content cin">
   <script src="js/update_one.js"></script>
 
 <form id="lpa_update_form" method="post" data-ajax="false">
 
 <h3 class="ui-bar ui-bar-a texs" >Update LPA</h3>
 
-<label>Region</label>
-<select name="regiona" id="regiona" >
+<label>region</label>
+<select name="region" id="region">
     <option value="0">Select Region</option>
 </select>
 
-<label>Country</label>
-<select name="countrya" id="countrya" >
+<label>country</label>
+<select name="country" id="country">
     <option value="0">Select Country</option> 
 </select>
 
@@ -66,13 +64,7 @@
     <option value="0">Select Plant</option>
 </select>
 
-<!-- <label>plant name</label>
-<select name="plant_name" id="plant_name" >
-    <option value="0">Select Plant</option>
-</select> -->
-<!--<label>Part</label>
-<input type="text" name="find_part"  id="find_part" >
--->
+
 <label>Date</label>
 <input type="date" name="find_datepicker"  id="find_datepicker" >
 
@@ -84,22 +76,13 @@
     <option value="3">shift3</option>
 </select>
 
-<!--<label for="shift" class="select" style="display:none;">Select Part</label>
-<select name="find_part" id="find_part" style="display:none;">
-    <option value="0">Select Part</option>
-</select>
--->
-
-
 </form>
 </div><!--content div end-->
 <div  id="first_div"><!--next button-->
  <a href="#" class="cena ui-btn ui-corner-all ui-shadow but ui-state-persist ui-btn-active" id="find_update1">Find</a>
  <h3 class="ui-bar ui-bar-a texsa " id="h3_up" style="display:none;">Parts</h3>
 <ul data-role="listview" style="display:none;" id="part_ui_list">
-<!--  <li><a href="#">List Item</a></li>
-      <li><a href="#">List Item</a></li>
--->      
+    
 </ul>
 </div><!--next button end-->
 
