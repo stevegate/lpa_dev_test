@@ -1,0 +1,151 @@
+// JavaScript Document
+	$(document).one('pagecreate', '#pagetwo', function(){  
+		//alert('width' + $(window).width());
+		//alert('height' + $(window).height());
+		//alert('body height' + $(body).height());
+		//alert('body width' + $(body).width());
+		//$("#testpopup").dialog();
+		//$.mobile.changePage('#pagetwo', {transition: 'pop', role: 'testpopup'}); 
+
+		userobject = 	JSON.parse(sessionStorage.getItem("user_data"));	
+		$('#emplyee_name_two').text(''+userobject.firstname+' '+userobject.lastname);
+		$('#emplyee_id_two').text(userobject.username);
+		ScaleContentToDevice();
+
+		$(document).off('click', '#pagecreate_two').on('click', '#pagecreate_two', function() { 
+			changepage();
+			return false;
+		});
+		
+		
+		$(document).off('click', '#page_two_profile').on('click','#page_two_profile',function(){
+				$.mobile.changePage("profile.html", { transition: "slide", changeHash: false, reverse: false });
+				return false;
+
+		});
+
+		
+		$(document).off('click', '#lpa_update_one').on('click', '#lpa_update_one', function() { 
+			// alert('testing update page');
+			$.mobile.changePage("update_one.html", { transition: "slide", changeHash: true, reverse: false }); 
+			return false;
+		});
+
+
+		$(document).off('click', '#two_signout').on('click', '#two_signout', function() {
+			sessionStorage.clear(); 
+			// alert('testing update page');
+			$.mobile.changePage("index.html", { transition: "slide", changeHash: true, reverse: false }); 
+			return false;
+		});
+		
+		
+		$(document).off('click', '#feedback_submit').on('click', '#feedback_submit', function() { // catch the form's submit event
+			//alert('test');
+            if($('#feedback').val().length > 0){
+				userdata = JSON.parse(sessionStorage.getItem("user_data"));
+
+				console.log($('#feedback_form').serialize());
+                    $.ajax({url: 'http://staging.eimpressive.com/slimrestapi-dev/updatefeedback.php?userid='+userdata.user_id,
+                        data:$('#feedback_form').serialize(),
+                        type: 'post',                   
+                        async: 'true',
+						crossDomain: true,
+                        dataType: 'json',
+                        beforeSend: function() {
+							$('body').addClass('ui-loading');
+
+                        },
+                        complete: function() {
+							$.mobile.loading().hide();// This will hide ajax spinner
+                        },
+                        success: function (result) {
+							//console.log(result);
+							if(result[0]){
+								alert('details submitted successfully');
+								$("#feedback_form").trigger('reset');
+								$('#myPopup').popup('close'); 
+							}else {
+								//alert('incorrect details provided');
+								alert('Network error has occurred please try again!');
+
+							}
+							return false;
+                        },
+                        error: function (request,error) {
+						console.log(error);
+						console.log(request);
+                        alert('Network error has occurred please try again!');
+                        }
+                    });                  
+            } else {
+                alert('Please fill the value before you submit');
+            }           
+            return false; // cancel original event to prevent form submitting
+        });    	
+		
+	});
+	
+	
+	
+		/*var on = false;  
+		$("html").click( function( e )
+		{
+		if( $(".ui-panel").hasClass("ui-panel-open") == true  && !on){
+				on = true
+		}else{
+				on = false;
+				$( "#two_overlayPanel" ).panel( "close" );        
+		}		
+		});*/
+
+	
+	
+	
+	function changepage(){
+		
+			//alert('page2');
+			$.mobile.changePage("three.html", { transition: "slide", changeHash: true, reverse: false }); 
+			//return false;
+
+		
+	}
+	
+	
+	function ScaleContentToDevice() {
+    scroll(0, 0);
+    var headerHeight = $("#jqmHeader:visible").outerHeight();
+    var footerHeight = $("#jqmFooter:visible").outerHeight();
+    var viewportHeight = $(window).height();
+       
+    var content = $("#jqmContent:visible");
+    var contentMargins =  content.outerHeight() - content.height();
+    
+    var contentheight = viewportHeight - headerHeight - footerHeight - contentMargins;
+    
+    content.height(contentheight);
+};
+
+
+
+
+		function onDeviceReady() {
+		// Register the event listener	
+			document.addEventListener("backbutton", onBackKeyDown, false);
+			console.log('Device ready - register onBackKeyDown()');                
+	   }
+
+	   function onBackKeyDown() {
+				var active_page = $( ":mobile-pagecontainer" ).pagecontainer( "getActivePage" );
+				var id =active_page.page().attr('id');
+				if (id==='pagetwo') 
+				{
+					if (confirm('Do you want to exit the app? If not, use the top left button to go to Previous Page?')==true)
+					{
+						//navigator.app.exitApp();
+					}
+				}else
+				{
+					navigator.app.backHistory();
+				}
+		}

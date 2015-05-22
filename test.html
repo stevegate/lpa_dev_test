@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+<link href='css/googlefonts.css' rel='stylesheet' type='text/css'>
+<link href='css/mobil.css' rel='stylesheet' type='text/css'>
+
+<script src="js/jquery-1.11.2.min.js"></script>
+<script>
+    $(document).on("mobileinit", function () {
+        /*$.mobile.hashListeningEnabled = false;
+         $.mobile.pushStateEnabled = false;
+	 $.mobile.changePage.defaults.changeHash = false;*/
+
+    });
+</script>
+
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script type="text/javascript" src="js/test.js">	</script>
+
+</head>
+
+<body>
+<!--main page-->
+<div data-role="page" id="pageone" class="bg">
+<!--content page-->
+<div data-role="main" class="ui-content">
+<!---img logo -->
+<div class="ui-grid-solo">
+      <div class="ui-block-a loc">
+      <img src="images/logo.png">
+      </div>
+</div>
+<!---img logo end-->
+<!--space gap-->
+<div class="ui-grid-solo">
+      <div class="ui-block-a">&nbsp;</div>
+</div>
+<div class="ui-grid-solo">
+      <div class="ui-block-a">&nbsp;</div>
+</div>
+<div class="ui-grid-solo">
+      <div class="ui-block-a">&nbsp;</div>
+</div>
+<!--space gap end-->
+
+<!--form-->
+<form id="dropdowns" action="test.html">
+      
+      <label>Region:</label>
+        <select id="region" name="region">
+          <option>-Select Region-</option>
+        </select>
+      
+      <br />
+      
+      <label>Country</label>
+        <select id="country" name="country">
+        <option>-Select Country-</option>
+        </select>
+      
+      <br />
+      
+      <label>Plant:</label>
+        <select id="plant" name="plant">
+          <option>-Select Plant-</option>
+        </select>
+      
+      <br />
+    </form>
+<h1></h1>
+
+
+
+
+
+
+
+<!--space gap end-->
+</div><!--content end-->
+
+
+
+<div data-role="footer"><!--footer-->
+  
+<marquee>LPA Tool by Service Center India</marquee>
+</div>  <!--footer end-->
+</div><!--main page end-->
+</body>
+</html>
