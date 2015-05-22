@@ -5,16 +5,39 @@
 <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
 <script src="js/jquery-1.11.2.min.js"></script>
 <script src="js/jquery.mobile-1.4.5.min.js"></script>
-<script src="js/jquery.ui.datepicker.js"></script>
-<script id="mobile-datepicker" src="js/jquery.mobile.datepicker.js"></script>
-
-
-<!--datepicker-->
-
-<link rel="stylesheet" href="css/jquery.mobile.datepicker.css">
+<!-- <script id="mobile-datepicker" src="js/jquery.mobile.datepicker.js"></script>
+datepicker
+<link rel="stylesheet" href="css/jquery.mobile.datepicker.css"> -->
 <!--datepicker end-->
 <link href='css/googlefonts.css' rel='stylesheet' type='text/css'>
 <link href='css/mobil.css' rel='stylesheet' type='text/css'>
+<script type="text/javascript">
+   function handleDates(elm, options) {
+        event.stopPropagation();
+        var currentField = $(elm);
+        var opts = options || {};
+        var minVal = opts.min || 0;
+        var maxVal = opts.max || 0;
+
+        var myNewDate = Date.parse(currentField.val()) || new Date();
+        if(typeof myNewDate === "number") {
+            myNewDate = new Date (myNewDate);
+        }
+
+        window.plugins.datePicker.show({
+            date : myNewDate,
+            mode : 'date',
+            minDate: Date.parse(minVal),
+            maxDate: Date.parse(maxVal)
+        }, function(returnDate) {
+            if(returnDate !== "") {
+                var newDate = new Date(returnDate);
+                currentField.val(getFormattedDate(newDate));
+            }
+            currentField.blur();
+        });
+    }
+</script>
 </head>
 
 
@@ -66,7 +89,8 @@
 
 
 <label>Date</label>
-<input type="date" name="find_datepicker"  id="find_datepicker" >
+<!-- <input type="date" name="find_datepicker"  id="find_datepicker" > -->
+<input type="date" name="datepicker" onclick="handleDatest()" />
 
 <label for="find_shift" class="select">Shift</label>
 <select name="find_shift" id="find_shift">
