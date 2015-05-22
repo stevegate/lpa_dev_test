@@ -1,5 +1,4 @@
-// JavaScript Document
-	$(document).one('pagecreate', '#pagetwo', function(){  
+		$(document).one('pagecreate', '#pagetwo', function(){  
 
 		userobject = 	JSON.parse(sessionStorage.getItem("user_data"));	
 		$('#emplyee_name_two').text(''+userobject.firstname+' '+userobject.lastname);
@@ -30,8 +29,6 @@
 			$.mobile.changePage("index.html", { transition: "slide", changeHash: true, reverse: false }); 
 			return false;
 		});
-		
-		
 		$(document).off('click', '#feedback_submit').on('click', '#feedback_submit', function() { // catch the form's submit event
             if($('#feedback').val().length > 0){
 				userdata = JSON.parse(sessionStorage.getItem("user_data"));
@@ -48,7 +45,7 @@
 
                         },
                         complete: function() {
-							$.mobile.loading().hide();// This will hide ajax spinner
+							$.mobile.loading().hide();
                         },
                         success: function (result) {
 							if(result[0]){
@@ -70,18 +67,13 @@
             } else {
                 alert('Please fill the value before you submit');
             }           
-            return false; // cancel original event to prevent form submitting
+            return false;
         });    	
 		
 	});
-	
-	
-	
 	function changepage(){
 				$.mobile.changePage("three.html", { transition: "slide", changeHash: true, reverse: false }); 
 	}
-	
-	
 	function ScaleContentToDevice() {
     scroll(0, 0);
     var headerHeight = $("#jqmHeader:visible").outerHeight();
@@ -95,16 +87,10 @@
     
     content.height(contentheight);
 };
-
-
-
-
 		function onDeviceReady() {
-		// Register the event listener	
 			document.addEventListener("backbutton", onBackKeyDown, false);
 			console.log('Device ready - register onBackKeyDown()');                
 	   }
-
 	   function onBackKeyDown() {
 				var active_page = $( ":mobile-pagecontainer" ).pagecontainer( "getActivePage" );
 				var id =active_page.page().attr('id');
@@ -112,7 +98,6 @@
 				{
 					if (confirm('Do you want to exit the app? If not, use the top left button to go to Previous Page?')==true)
 					{
-						//navigator.app.exitApp();
 					}
 				}else
 				{

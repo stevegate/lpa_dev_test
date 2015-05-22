@@ -2,10 +2,7 @@ var currentpage=1;
 var pagelimit =5;
 var total = 0;
 var totalpage=0;
-
-
 $(document).one('pageshow', '#update_one', function(){  
-
 	assignValues();
 	$(document).off('click', '#find_update1').on('click', '#find_update1', function() { 
 		$.ajax({url: 'http://staging.eimpressive.com/slimrestapi-dev/searchlpa_part.php',
@@ -38,20 +35,15 @@ $(document).one('pageshow', '#update_one', function(){
 					$('#part_ui_list').html('').listview("refresh");
 					$( "#popupsearch" ).popup("open");
 				}
-
 				return false;
 			},
 			error: function (request,error) {
-// This callback function will trigger on unsuccessful action     
-console.log(request);
-console.log(error);           
-alert('Network error has occurred please try again!');
-}
-});
-
-
+				console.log(request);
+				console.log(error);           
+				alert('Network error has occurred please try again!');
+			}
+		});
 return false;
-
 });
 
 $(document).off('click', '#update_one_profile').on('click','#update_one_profile', function(e1){
@@ -74,8 +66,6 @@ $(document).off('click', '#update_one_signout').on('click', '#update_one_signout
 });
 
 });
-
-
 function searchlpa(part){
 	$.ajax({url: 'http://staging.eimpressive.com/slimrestapi-dev/searchlpa.php?find_part='+part,
 		data:$('#lpa_update_form').serialize(),
@@ -101,18 +91,14 @@ function searchlpa(part){
 
 			return false;
 		},
-		error: function (request,error) {
-// This callback function will trigger on unsuccessful action     
-console.log(request);
-console.log(error);  
-$("#Network").popup("open");         
-alert('Network error has occurred please try again!');
+		error: function (request,error) {    
+			console.log(request);
+			console.log(error);  
+			$("#Network").popup("open");         
+			alert('Network error has occurred please try again!');
+		}
+	});
 }
-});
-
-
-}
-
 function assignValues(){
 	$region = $('#region'),
 	$plant = $('#find_plant'),
@@ -122,7 +108,6 @@ function assignValues(){
 	$('#update_one_employee_name').text(''+userobject.firstname+' '+userobject.lastname);
 	$('#update_one_employee_id').text(userobject.username);
 	var cont='<span class="mo" >'+userobject.firstname+'</span> <span class="mo" id="employeeid">   Id :'+userobject.firstname+'</span>';			
-
 
 	plant_array.forEach(function(currentResult) {
 		var currregion = currentResult.region;
@@ -134,7 +119,6 @@ function assignValues(){
 			value: currentResult.region, text: currentResult.region }));
 
 	});
-
 	$('#region').val(userobject.region).attr('selected', true);
 	$('#region').selectmenu("refresh", true);
 
@@ -152,12 +136,7 @@ function assignValues(){
 		});
 		if (appendFlag == false) $country.append($('<option>', {
 			value: currentCountry.country, text: currentCountry.country }));
-
-
 	});
-
-
-
 	$('#country').val(userobject.country).attr('selected', true);
 	$('#country').selectmenu("refresh", true);
 
@@ -174,16 +153,9 @@ function assignValues(){
 		});
 		if (appendFlag == false) $plant.append($('<option>', {
 			value: currentPlant.plant_id, text: currentPlant.plant_name }));
-
 	});
-
 	$('#find_plant').val(userobject.plant_line).attr('selected', true);
 	$('#find_plant').selectmenu("refresh", true);
-
-
-
-
-
 	$('#region').on('change', function() {
 		var currentRegion = $(this).val();
 		$country.empty();
@@ -198,8 +170,6 @@ function assignValues(){
 		$plant.append(newPlant);
 		$('#find_plant-button span').empty();
 		$('#find_plant-button span').append('-Select Plant-');
-
-
 		var newCountryList = plant_array.filter(function(currentResult) {
 			return currentResult.region === currentRegion;
 		});
@@ -212,13 +182,8 @@ function assignValues(){
 			});
 			if (appendFlag == false) $country.append($('<option>', {
 				value: currentCountry.country, text: currentCountry.country }));
-
-
 		});
 	});
-
-
-
 $('#country').on('change', function() {
 	var currentCountry = $(this).val();
 	$plant.empty();
@@ -226,11 +191,9 @@ $('#country').on('change', function() {
 	$('#find_plant-button span').empty();
 	$('#find_plant-button span').append('-Select Plant-');
 	$plant.append(newOption);
-
 	var newPlantList = plant_array.filter(function(currentResult) {
 		return currentResult.country === currentCountry;
 	});
-
 	newPlantList.forEach(function(currentPlant) {
 		var currplant = currentPlant.plant_name;
 		var appendFlag = false;
@@ -239,7 +202,6 @@ $('#country').on('change', function() {
 		});
 		if (appendFlag == false) $plant.append($('<option>', {
 			value: currentPlant.plant_id, text: currentPlant.plant_name }));
-
 	});
 });
 
