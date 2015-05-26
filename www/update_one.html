@@ -9,15 +9,45 @@
 datepicker
 <link rel="stylesheet" href="css/jquery.mobile.datepicker.css"> -->
 <!--datepicker end-->
+<<<<<<< HEAD
 <!--datepicker-->
 <script id="mobile-datepicker" src="js/jquery.mobile.datepicker.js"></script>
 <link rel="stylesheet" href="css/jquery.mobile.datepicker.css">
 <!--datepicker end-->
+=======
+>>>>>>> 22a734e279e92c6ccc1cbcd7a6e3cdac54df80f4
 <link href='css/googlefonts.css' rel='stylesheet' type='text/css'>
 <link href='css/mobil.css' rel='stylesheet' type='text/css'>
 <script type="text/javascript" src="http://cdn.jtsage.com/datebox/latest/jqm-datebox.core.min.js"></script>
 <script type="text/javascript" src="http://dev.jtsage.com/cdn/datebox/latest/jqm-datebox.mode.datebox.min.js"></script>
 <link rel="stylesheet" type="text/css" href="http://cdn.jtsage.com/datebox/latest/jqm-datebox.min.css">
+<script type="text/javascript">
+   function handleDates(elm, options) {
+        event.stopPropagation();
+        var currentField = $(elm);
+        var opts = options || {};
+        var minVal = opts.min || 0;
+        var maxVal = opts.max || 0;
+
+        var myNewDate = Date.parse(currentField.val()) || new Date();
+        if(typeof myNewDate === "number") {
+            myNewDate = new Date (myNewDate);
+        }
+
+        window.plugins.datePicker.show({
+            date : myNewDate,
+            mode : 'date',
+            minDate: Date.parse(minVal),
+            maxDate: Date.parse(maxVal)
+        }, function(returnDate) {
+            if(returnDate !== "") {
+                var newDate = new Date(returnDate);
+                currentField.val(getFormattedDate(newDate));
+            }
+            currentField.blur();
+        });
+    }
+</script>
 </head>
 <body>
 <!--main page-->
@@ -69,8 +99,13 @@ datepicker
 
 <!-- <input type="date" name="find_datepicker"  id="find_datepicker" > -->
 <!-- <input type="date" name="datepicker" onclick="handleDatest()" /> -->
+<<<<<<< HEAD
 <label>Date</label>
 <input type="date" name="find_datepicker"  id="find_datepicker" >
+=======
+<!-- <input type="text" data-role="datebox" data-options='{"mode":"datebox"}'> -->
+<input type="date" name="datepicker" onclick="handleDatest()" />
+>>>>>>> 22a734e279e92c6ccc1cbcd7a6e3cdac54df80f4
 
 <label for="find_shift" class="select">Shift</label>
 <select name="find_shift" id="find_shift">
