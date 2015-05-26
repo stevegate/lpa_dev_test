@@ -17,7 +17,7 @@ $(document).one('pagecreate', '#page_five', function(){
 			complete: function() {
 			},
 			success: function (result) {
-				console.log(result);
+			console.log(result);
 $('#basic').popup('open'); 
 return false;
 },

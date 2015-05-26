@@ -315,9 +315,3 @@ text-align: center;
 
 
 /*may 8*/
-.fix{
-	  background-color: #a8d4b0!important;
-  position: fixed;
-  width: inherit;
-    z-index: 2000;
-}

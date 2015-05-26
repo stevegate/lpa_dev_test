@@ -1,4 +1,7 @@
-$(document).one('pageshow', '#pagethree', function(e, data){ 
+$(document).one('pageshow', '#pagethree',function(e, data){ 
+
+	
+
 assignValues();
 $(document).off('click', '#next1').on('click', '#next1', function(e2) {
 	if($("#plant_name").val()!="0" && $("#partno").val().length>0 && $("#shift").val()!="0"){ 
@@ -13,6 +16,7 @@ $(document).off('click', '#next1').on('click', '#next1', function(e2) {
 	e.preventDefault();
 	e.stopPropagation();
 });
+
 $(document).off('click', '#page_three_profile').on('click','#page_three_profile', function(e1){
 	$.mobile.changePage("profile.html", { transition: "slide", changeHash: true, reverse: false });
 return false;
@@ -36,6 +40,15 @@ return false;
 });
 e.preventDefault();
 e.stopPropagation();
+var picker = $( "input[type='text']", this );
+			picker.mobipick();
+alert("hi123");
+			picker.on( "change", function() {
+					var date = $( this ).val();
+
+					// formatted date					
+					var dateObject = $( this ).mobipick( "option", "date" );
+			});
 });
 function assignValues(){
 	$region = $('#region'),
@@ -50,6 +63,7 @@ function assignValues(){
 	var cont='<span class="mo" >'+userobject.firstname+'</span> <span class="mo" id="employeeid">   Id :'+userobject.firstname+'</span>'
 	console.log('page2');
 	console.log('userobject.firstname' + userobject.firstname);
+/*	
 	var today = new Date();   
 	var dd = today.getDate();
 var mm = today.getMonth()+1; 
@@ -58,7 +72,10 @@ if(mm<=9){
 }				
 var yyyy = today.getFullYear();    
 
-$('#datepicker').val(yyyy + '-' + mm + '-' + dd);
+$('#datepicker').val(yyyy + '-' + mm + '-' + dd);*/
+
+
+
 plant_array.forEach(function(currentResult) {
 	var currregion = currentResult.region;
 	var appendFlag = false;
@@ -154,3 +171,4 @@ $('#country').on('change', function() {
 
 
 }
+
