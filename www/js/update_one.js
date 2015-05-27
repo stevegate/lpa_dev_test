@@ -205,5 +205,15 @@ $('#country').on('change', function() {
 	});
 });
 
+$('#demo').on( "tap", function() {
+			var picker = $( "input[type='text']", this );
+			picker.mobipick();
+			picker.on( "change", function() {
+					var date = $( this ).val();
+
+					// formatted date					
+					var dateObject = $( this ).mobipick( "option", "date" );
+			});
+		});
 
 }

@@ -317,6 +317,7 @@ text-align: center;
 /*may 27*/
 .mobipick-main {
   padding: .5em;
+  background-color: #121312;
 }
 .mobipick-date-formatted {
 	min-height:40px; /* clock image is 40 px */ 
@@ -385,3 +386,6 @@ li.mobipick-hide {
 	*display: inline;
 }
 
+.mobipick-main .ui-popup .ui-body-a .ui-overlay-shadow .ui-corner-all{
+	max-width: none !important;
+}

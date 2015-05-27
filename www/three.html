@@ -5,11 +5,6 @@
 <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
 <script src="js/jquery-1.11.2.min.js"></script>
 <script src="js/jquery.mobile-1.4.5.min.js"></script>
-<!-- <script src="js/jquery.min.js"></script> -->
-<!--datepicker-->
-<!-- <script id="mobile-datepicker" src="js/jquery.mobile.datepicker.js"></script>
-<link rel="stylesheet" href="css/jquery.mobile.datepicker.css"> -->
-<!--datepicker end-->
 <link href='css/googlefonts.css' rel='stylesheet' type='text/css'>
 <link href='css/mobil.css' rel='stylesheet' type='text/css'>
 <style type="text/css">
@@ -21,10 +16,11 @@
 			margin: 2em 0;
 		}
 	</style>
-	<link href="css/mobipick.css" rel="stylesheet" type="text/css" />
-	<script type="text/javascript" src="demo/shCore.js"></script>
-	<script type="text/javascript" src="external/xdate.js"></script>
-	<script type="text/javascript" src="js/mobipick.js"></script>
+<link href="css/mobipick.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="demo/shCore.js"></script>
+  <script type="text/javascript" src="external/xdate.js"></script> 
+  <script type="text/javascript" src="js/mobipick.js"></script>
+
 </head>
 <body>
 <!--main page-->
@@ -55,30 +51,29 @@
 
 <!--1st drop down-->
 <h3 class="ui-bar ui-bar-a texsc" >Create LPA</h3>
-<label>region</label>
+<label class="cen">Region</label>
 <select name="region" id="region" >
     <option value="0">Select Region</option>
 </select>
-<label>country</label>
+<label class="cen">Country</label>
 <select name="country" id="country" >
     <option value="0">Select Country</option> 
 </select>
-<label>plant name</label>
+<label class="cen">Plant Name</label>
 <select name="plant_name" id="plant_name" >
     <option value="0">Select Plant</option>
 </select>
-<!--first dropdown end-->
 
-<!--2nd drop down-->
+<label class="cen">Part Number</label>
 <input type="text" name="partno" id="partno" placeholder="Part Number" />
-
-<!-- <input type="date" name="datepicker" id="datepicker"  /> -->
-<div id="demo" >
+<br>
+<div id="demo">
 <label>Date</label>
 <div class="demo">						
 <input type="text" readonly="readonly" />
 </div>
 </div>
+<br>
 <select name="shift" id="shift">
     <option value="0">Select Shift</option>
     <option value="1">Shift 1</option>
