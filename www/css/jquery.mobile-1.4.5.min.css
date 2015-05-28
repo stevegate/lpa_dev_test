@@ -312,7 +312,7 @@ text-align: center;
 /*may 27*/
 .mobipick-main {
   padding: .5em;
-  background-color: #121312;
+  background-color: #007032;
 }
 .mobipick-date-formatted {
 	min-height:40px; /* clock image is 40 px */ 
@@ -402,4 +402,15 @@ li.mobipick-hide {
 }
 .mobipick-main {
     max-width: 100% !important;
+}
+.ui-body-b{
+	  background-color: #A8D4B0;
+  border-color: #A8D4B0;
+  color: #fff;
+  text-shadow: 0 1px 0 #A8D4B0;
+
+}
+.ui-body-a a{
+	color: #007032 !important;
+  font-weight: 700 !important;
 }
