@@ -558,15 +558,7 @@ background-size: 100% 100%;
         margin-left: 35%;
   margin-right: 35%;
 }
-.butm{
-  text-align: center;
-     border-radius: 20px !important;
-  
-    background-color: #249651 !important;
-    color: white !important;
-    border-color:#5c8066 !important;
-      text-shadow: 0 0px 0 #f3f3f3;
-}
+
 .yel{
   color:#ffe700 !important;
 }
@@ -673,4 +665,31 @@ background-size: 100% 100%;
   top:0px !important;
   width: inherit;
     z-index: 2000;
+}
+/*may28*/
+
+
+.dar{
+     background: rgb(233, 233, 233) none !important;
+  color: rgb(65, 61, 61) !important;
+  font-weight: 600 !important;
+}
+.tese{
+  margin-top:-15px !important;
+}
+.butm{
+  text-align: center;
+     border-radius: 20px !important;
+    background-color: #249651 !important;
+    color: white !important;
+      text-shadow: 0 0px 0 #f3f3f3;
+      border-style:none !important;
+}
+@media only screen and (min-width:480px) and (max-width: 640px)  {
+  .texsc{
+  font-size: 120% !important;
+}
+.texs {
+   font-size: 120% !important;
+  }
 }

@@ -59,16 +59,19 @@ return false;
 });
 
 $(document).off('click', '#five_logo').on('click', '#five_logo', function(e) { 
-	$.mobile.changePage("two.html", { transition: "slide", changeHash: true, reverse: false }); 												            return true;
+	$.mobile.changePage("two.html", { transition: "slide", changeHash: true, reverse: false }); 												           
+ return true;
 });
 
 $(document).off('click', '#page_five_create').on('click', '#page_five_create', function(e) { 
-	$.mobile.changePage("three.html", { transition: "slide", changeHash: true, reverse: false }); 												            return true;
+	$.mobile.changePage("three.html", { transition: "slide", changeHash: true, reverse: false }); 												            
+	return true;
 });
 
 
 $(document).off('click', '#page_five_update').on('click', '#page_five_update', function(e) { 
-	$.mobile.changePage("update_one.html", { transition: "slide", changeHash: true, reverse: false }); 												            return true;
+	$.mobile.changePage("update_one.html", { transition: "slide", changeHash: true, reverse: false }); 												            
+	return true;
 });
 
 function assignValues(){

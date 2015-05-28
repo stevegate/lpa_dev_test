@@ -48,9 +48,11 @@
 <!--content page-->
 <div data-role="main" class="ui-content" >
 <script src="js/three.js"></script>
+  <script type="text/javascript" src="js/mobipick.js"></script>
+   <script type="text/javascript" src="external/xdate.js"></script> 
 
 <!--1st drop down-->
-<h3 class="ui-bar ui-bar-a texsc" >Create LPA</h3>
+<h3 class="ui-bar ui-bar-a texsc tese" >Create LPA</h3>
 <label class="cen">Region</label>
 <select name="region" id="region" >
     <option value="0">Select Region</option>
@@ -64,16 +66,17 @@
     <option value="0">Select Plant</option>
 </select>
 
-<label class="cen">Part Number</label>
-<input type="text" name="partno" id="partno" placeholder="Part Number" />
+<label class="">Part Number</label>
+<input type="text" name="partno" id="partno" placeholder="Part Number" class="dar" />
 <br>
+<label class="">Date</label>
 <div id="demo">
-<label>Date</label>
 <div class="demo">						
-<input type="text" readonly="readonly" />
+<input type="text" readonly="readonly" placeholder="Date" class="dar"/>
 </div>
 </div>
 <br>
+<label class="cen">Shift</label>
 <select name="shift" id="shift">
     <option value="0">Select Shift</option>
     <option value="1">Shift 1</option>

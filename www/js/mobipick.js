@@ -309,7 +309,7 @@ $.widget( "sustainablepace.mobipick", $mobile.widget, {
 	//
 	// View
 	//
-	_markup_header: "<div class='mobipick-main'><div class='mobipick-date-formatted'>Date</div><ul class='mobipick-groups'>",
+	_markup_header: "<div class='mobipick-main'><div class=''></div><ul class='mobipick-groups'>",
 	_markup_d: "<li><ul><li><a class='mobipick-next-day'>+</a></li><li><input type='text' class='mobipick-input mobipick-day' /></li><li><a class='mobipick-prev-day'>-</a></li></ul></li>",
 	_markup_m: "<li><ul><li><a class='mobipick-next-month'>+</a></li><li><input type='text' class='mobipick-input mobipick-month' /></li><li><a class='mobipick-prev-month'>-</a></li></ul></li>",
 	_markup_y: "<li><ul><li><a class='mobipick-next-year'>+</a></li><li><input type='text' class='mobipick-input mobipick-year' /></li><li><a class='mobipick-prev-year'>-</a></li></ul></li>",
