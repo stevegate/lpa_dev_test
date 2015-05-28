@@ -1,4 +1,4 @@
-		$(document).one('pagecreate', '#pagetwo', function(){  
+		$(document).one('pageshow', '#pagetwo', function(){  
 
 		userobject = 	JSON.parse(sessionStorage.getItem("user_data"));	
 		$('#emplyee_name_two').text(''+userobject.firstname+' '+userobject.lastname);
@@ -11,7 +11,7 @@
 		});
 		
 		
-		$(document).off('click', '#page_two_profile').on('click','#page_two_profile',function(){
+		$(document).off('click', '#pagetwo_profile').on('click','#pagetwo_profile',function(){
 				$.mobile.changePage("profile.html", { transition: "slide", changeHash: false, reverse: false });
 				return false;
 

@@ -2,14 +2,20 @@ $(document).one('pageshow', '#profile', function(e){
 
 	assignProfileValues();
 
-	$(document).off('click', '#profile_create').on('click','#profile_create',function(e1){
+	/*$(document).off('click', '#profile_create').on('click','#profile_create',function(e1){
 		$('#pagethree').remove();
 		$('#profile').remove();
 		$.mobile.changePage("three.html", { transition: "slide", changeHash: true, reverse: false });							 						
 		e1.stopPropagation();
 		e1.preventDefault();
 		return false;
-	});
+	});*/
+
+$(document).off('click', '#profile_create').on('click','#profile_create',function(){
+				$.mobile.changePage("three.html", { transition: "slide", changeHash: false, reverse: false });
+				return false;
+
+		});
 
 	$(document).off('click', '#profile_update').on('click','#profile_update',function(e){
 		if(!e.handled){
