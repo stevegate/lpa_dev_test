@@ -6,7 +6,7 @@ $(document).off('click', '#next1').on('click', '#next1', function(e2) {
 		sessionStorage.setItem("partno",JSON.stringify($("#partno").val()));
 		sessionStorage.setItem("datepicker",JSON.stringify($("#datepicker").val()));
 		sessionStorage.setItem("shift",JSON.stringify($("#shift").val()));
-		$.mobile.changePage("five.html", { transition: "none", changeHash: true, reverse: false ,reloadPage:false});
+		$.mobile.changePage("five.html", { transition: "none", changeHash: true, reverse: false});
 	}else {
 		$( "#popupcreatelpa" ).popup("open");
 	}
