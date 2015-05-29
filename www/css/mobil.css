@@ -244,17 +244,17 @@ margin: -10px 10px 0px !important;
   margin-left: 1.50em;
 }
 
-.ui-page-theme-a .but{background-color: #007030 !important ;border-color: #b0b0b0;color: #ffffff !important;text-shadow:none !important;
-border-radius: 20px!important;
+.ui-page-theme-a .but{background-color: #007030 !important ;color: #ffffff !important;text-shadow:none !important;
+
 }
-.ui-page-theme-a .but:hover{background-color: #007030 !important ;border-color: #b0b0b0;color: #ffffff !important;text-shadow:none !important;
-border-radius: 20px!important;
+.ui-page-theme-a .but:hover{background-color: #007030 !important ;color: #ffffff !important;text-shadow:none !important;
+
 }
-.ui-page-theme-a .but:visited{background-color: #007030 !important ;border-color: #b0b0b0;color: #ffffff !important;text-shadow:none !important;
-border-radius: 20px!important;
+.ui-page-theme-a .but:visited{background-color: #007030 !important ;color: #ffffff !important;text-shadow:none !important;
+
 }
-.ui-page-theme-a .but:focus{background-color: #007030 !important ;border-color: #b0b0b0;color: #ffffff !important;text-shadow:none !important;
-border-radius: 20px!important;
+.ui-page-theme-a .but:focus{background-color: #007030 !important ;color: #ffffff !important;text-shadow:none !important;
+
 }
 .ui-page-theme-a .butm:hover{
 text-align: center;
@@ -341,7 +341,7 @@ border-radius: 0px!important;
 }
 
 .ui-panel-animate.ui-panel-position-right.ui-panel-display-overlay {
-  margin-top: 55px;
+  margin-top: 51px;
   background-color: #a8d4b0 !important;
 }
 /*april 29*/
@@ -697,6 +697,8 @@ background-size: 100% 100%;
         margin-left: 35% !important;
   margin-right: 35% !important;
 }
+
+
 @media only screen and (min-width:480px) and (max-width: 640px)  {
   .texsc{
   font-size: 120% !important;
