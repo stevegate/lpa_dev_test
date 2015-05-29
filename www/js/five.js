@@ -2,7 +2,6 @@ var currentpage=1;
 var pagelimit =5;
 var total = 0;
 var totalpage=0;
-
 $(document).one('pagecreate', '#page_five', function(){  
 	assignValues();
 	$(".ui-content").css('margin-bottom', $('#footer').height());
@@ -33,7 +32,7 @@ alert('Network error has occurred please try again!');
 
 });
 	$( "#basic" ).bind({popupafterclose: function(event, ui) { 
-$.mobile.changePage("two.html", { transition: "none", changeHash: false, reverse: false });
+$.mobile.changePage("two.html", { transition: "none", changeHash: true, reverse: false });
 return false;						
 }
 });

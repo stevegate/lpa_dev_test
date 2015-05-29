@@ -67,9 +67,6 @@ background-color: #a8d4b0;
 .ui-datepicker-header .ui-widget-header .ui-helper-clearfix .ui-corner-all{
   display: block;
 }
- .but{background-color: #007030 !important ;border-color: #b0b0b0;color: #ffffff !important;text-shadow:none !important;
-border-radius: 0px!important;
-}
 
 hr {
   background-color: #000000;
@@ -247,6 +244,18 @@ margin: -10px 10px 0px !important;
   margin-left: 1.50em;
 }
 
+.ui-page-theme-a .but{background-color: #007030 !important ;border-color: #b0b0b0;color: #ffffff !important;text-shadow:none !important;
+border-radius: 20px!important;
+}
+.ui-page-theme-a .but:hover{background-color: #007030 !important ;border-color: #b0b0b0;color: #ffffff !important;text-shadow:none !important;
+border-radius: 20px!important;
+}
+.ui-page-theme-a .but:visited{background-color: #007030 !important ;border-color: #b0b0b0;color: #ffffff !important;text-shadow:none !important;
+border-radius: 20px!important;
+}
+.ui-page-theme-a .but:focus{background-color: #007030 !important ;border-color: #b0b0b0;color: #ffffff !important;text-shadow:none !important;
+border-radius: 20px!important;
+}
 .ui-page-theme-a .butm:hover{
 text-align: center;
      border-radius: 20px !important;
@@ -279,7 +288,7 @@ text-align: center;
     color: white !important;
     border-color:#5c8066 !important;
 }
-.ui-page-theme-a .but:hover{background-color: #007030 !important ;border-color: #b0b0b0;color: #ffffff !important;text-shadow:none !important;
+/*.ui-page-theme-a .but:hover{background-color: #007030 !important ;border-color: #b0b0b0;color: #ffffff !important;text-shadow:none !important;
 border-radius: 0px!important;
 }
 .ui-page-theme-a .but:visited{background-color: #007030 !important ;border-color: #b0b0b0;color: #ffffff !important;text-shadow:none !important;
@@ -287,7 +296,7 @@ border-radius: 0px!important;
 }
 .ui-page-theme-a .but:focus{background-color: #007030 !important ;border-color: #b0b0b0;color: #ffffff !important;text-shadow:none !important;
 border-radius: 0px!important;
-}
+}*/
 .texs{
 	text-align:center;
 }
@@ -684,6 +693,9 @@ background-size: 100% 100%;
     color: white !important;
       text-shadow: 0 0px 0 #f3f3f3;
       border-style:none !important;
+      width: 30%!important;
+        margin-left: 35% !important;
+  margin-right: 35% !important;
 }
 @media only screen and (min-width:480px) and (max-width: 640px)  {
   .texsc{

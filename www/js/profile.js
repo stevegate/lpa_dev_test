@@ -12,7 +12,7 @@ $(document).one('pageshow', '#profile', function(e){
 	});*/
 
 $(document).off('click', '#profile_create').on('click','#profile_create',function(){
-				$.mobile.changePage("three.html", { transition: "none", changeHash: false, reverse: false });
+				$.mobile.changePage("three.html", { transition: "none", changeHash: true, reverse: false });
 				return false;
 
 		});
@@ -35,7 +35,7 @@ $(document).off('click', '#profile_create').on('click','#profile_create',functio
 });
 $(document).off('click', '#profile_logo').on('click', '#profile_logo', function(e) { 
 	$.mobile.changePage("two.html", { transition: "none", changeHash: true, reverse: false }); 
-	return true;
+	return false;
 });			
 $(document).off('click', '#lpa_update_two').on('click', '#lpa_update_two', function(e) { 
 if(e.handled !== true) 

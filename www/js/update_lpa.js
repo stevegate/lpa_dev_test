@@ -36,7 +36,7 @@ $(document).one('pagecreate', '#update_lpa', function(){
 
 	});
 	$( "#basica" ).bind({popupafterclose: function(event, ui) { 
-$.mobile.changePage("two.html", { transition: "none", changeHash: false, reverse: false });
+$.mobile.changePage("two.html", { transition: "none", changeHash: true, reverse: false });
 return false;						
 }
 });

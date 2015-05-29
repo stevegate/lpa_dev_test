@@ -12,7 +12,7 @@
 		
 		
 		$(document).off('click', '#pagetwo_profile').on('click','#pagetwo_profile',function(){
-				$.mobile.changePage("profile.html", { transition: "none", changeHash: false, reverse: false });
+				$.mobile.changePage("profile.html", { transition: "none", changeHash: true, reverse: false });
 				return false;
 
 		});
