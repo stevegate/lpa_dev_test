@@ -47,21 +47,21 @@ return false;
 });
 
 $(document).off('click', '#update_one_profile').on('click','#update_one_profile', function(e1){
-	$.mobile.changePage("profile.html", { transition: "slide", changeHash: true, reverse: false });
+	$.mobile.changePage("profile.html", { transition: "none", changeHash: true, reverse: false });
 	return false;
 });
 
 $(document).off('click', '#update_one_logo').on('click', '#update_one_logo', function(e) { 
-	$.mobile.changePage("two.html", { transition: "slide", changeHash: true, reverse: false }); 												        	    return true;
+	$.mobile.changePage("two.html", { transition: "none", changeHash: true, reverse: false }); 												        	    return true;
 });
 
 $(document).off('click', '#update_one_create').on('click', '#update_one_create', function(e) { 
-	$.mobile.changePage("three.html", { transition: "slide", changeHash: true, reverse: false }); 												            return true;
+	$.mobile.changePage("three.html", { transition: "none", changeHash: true, reverse: false }); 												            return true;
 });
 
 $(document).off('click', '#update_one_signout').on('click', '#update_one_signout', function() {
 	sessionStorage.clear(); 
-	$.mobile.changePage("index.html", { transition: "slide", changeHash: true, reverse: false }); 
+	$.mobile.changePage("index.html", { transition: "none", changeHash: true, reverse: false }); 
 	return false;
 });
 
@@ -84,7 +84,7 @@ function searchlpa(part){
 				sessionStorage.setItem("update_category_data",JSON.stringify(result[1]));
 				sessionStorage.setItem("update_activity_data",JSON.stringify(result[2]));
 				$.mobile.loading().hide();
-				$.mobile.changePage("update_lpa.html",{ transition: "slide", changeHash: true, reverse: false }); 
+				$.mobile.changePage("update_lpa.html",{ transition: "none", changeHash: true, reverse: false }); 
 			}else {
 				alert('No Data Found for the search record');	
 			}

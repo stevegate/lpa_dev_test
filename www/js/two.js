@@ -12,21 +12,21 @@
 		
 		
 		$(document).off('click', '#pagetwo_profile').on('click','#pagetwo_profile',function(){
-				$.mobile.changePage("profile.html", { transition: "slide", changeHash: false, reverse: false });
+				$.mobile.changePage("profile.html", { transition: "none", changeHash: false, reverse: false });
 				return false;
 
 		});
 
 		
 		$(document).off('click', '#lpa_update_one').on('click', '#lpa_update_one', function() { 
-			$.mobile.changePage("update_one.html", { transition: "slide", changeHash: true, reverse: false }); 
+			$.mobile.changePage("update_one.html", { transition: "none", changeHash: true, reverse: false }); 
 			return false;
 		});
 
 
 		$(document).off('click', '#two_signout').on('click', '#two_signout', function() {
 			sessionStorage.clear(); 
-			$.mobile.changePage("index.html", { transition: "slide", changeHash: true, reverse: false }); 
+			$.mobile.changePage("index.html", { transition: "none", changeHash: true, reverse: false }); 
 			return false;
 		});
 		$(document).off('click', '#feedback_submit').on('click', '#feedback_submit', function() { // catch the form's submit event
@@ -72,7 +72,7 @@
 		
 	});
 	function changepage(){
-				$.mobile.changePage("three.html", { transition: "slide", changeHash: true, reverse: false }); 
+				$.mobile.changePage("three.html", { transition: "none", changeHash: true, reverse: false }); 
 	}
 	function ScaleContentToDevice() {
     scroll(0, 0);

@@ -5,7 +5,7 @@ $(document).one('pageshow', '#success_page', function(e){
 				$(document).off('click', '#success_create').on('click','#success_create',function(e1){
 						
 
-						$.mobile.changePage("three.html", { transition: "slide", changeHash: false, reverse: false });							 						
+						$.mobile.changePage("three.html", { transition: "none", changeHash: false, reverse: false });							 						
 						e1.stopPropagation();
 		   				e1.preventDefault();	
 						return false;
@@ -14,7 +14,7 @@ $(document).one('pageshow', '#success_page', function(e){
 				$(document).off('click', '#success_update').on('click','#success_update',function(e){
 						if(!e.handled){
 						$('#pagethree').remove();
-						$.mobile.changePage("update_one.html", { transition: "slide", changeHash: false, reverse: false });							 						e.handled=true;
+						$.mobile.changePage("update_one.html", { transition: "none", changeHash: false, reverse: false });							 						e.handled=true;
 
 						}
 
@@ -24,12 +24,12 @@ $(document).one('pageshow', '#success_page', function(e){
 
 				$(document).off('click', '#success_signout').on('click', '#success_signout', function() {
 					sessionStorage.clear(); 
-					$.mobile.changePage("index.html", { transition: "slide", changeHash: true, reverse: false }); 
+					$.mobile.changePage("index.html", { transition: "none", changeHash: true, reverse: false }); 
 					return false;
 				});			
 	});
 	$(document).off('click', '#success_logo').on('click', '#success_logo', function(e) { 
-								$.mobile.changePage("two.html", { transition: "slide", changeHash: true, reverse: false }); 
+								$.mobile.changePage("two.html", { transition: "none", changeHash: true, reverse: false }); 
 								return true;
 	});
 

@@ -5,14 +5,14 @@ $(document).one('pageshow', '#profile', function(e){
 	/*$(document).off('click', '#profile_create').on('click','#profile_create',function(e1){
 		$('#pagethree').remove();
 		$('#profile').remove();
-		$.mobile.changePage("three.html", { transition: "slide", changeHash: true, reverse: false });							 						
+		$.mobile.changePage("three.html", { transition: "none", changeHash: true, reverse: false });							 						
 		e1.stopPropagation();
 		e1.preventDefault();
 		return false;
 	});*/
 
 $(document).off('click', '#profile_create').on('click','#profile_create',function(){
-				$.mobile.changePage("three.html", { transition: "slide", changeHash: false, reverse: false });
+				$.mobile.changePage("three.html", { transition: "none", changeHash: false, reverse: false });
 				return false;
 
 		});
@@ -21,7 +21,7 @@ $(document).off('click', '#profile_create').on('click','#profile_create',functio
 		if(!e.handled){
 			$('#pagethree').remove();
 
-			$.mobile.changePage("update_one.html", { transition: "slide", changeHash: true, reverse: false });							 						e.handled=true;
+			$.mobile.changePage("update_one.html", { transition: "none", changeHash: true, reverse: false });							 						e.handled=true;
 
 		}
 		return false;
@@ -29,12 +29,12 @@ $(document).off('click', '#profile_create').on('click','#profile_create',functio
 
 	$(document).off('click', '#profile_signout').on('click', '#profile_signout', function() {
 		sessionStorage.clear(); 
-		$.mobile.changePage("index.html", { transition: "slide", changeHash: true, reverse: false }); 
+		$.mobile.changePage("index.html", { transition: "none", changeHash: true, reverse: false }); 
 		return false;
 	});	
 });
 $(document).off('click', '#profile_logo').on('click', '#profile_logo', function(e) { 
-	$.mobile.changePage("two.html", { transition: "slide", changeHash: true, reverse: false }); 
+	$.mobile.changePage("two.html", { transition: "none", changeHash: true, reverse: false }); 
 	return true;
 });			
 $(document).off('click', '#lpa_update_two').on('click', '#lpa_update_two', function(e) { 
@@ -42,7 +42,7 @@ if(e.handled !== true)
 {
 e.handled = true;
 }
-$.mobile.changePage("update_one.html", { transition: "slide", changeHash: true, reverse: false }); 
+$.mobile.changePage("update_one.html", { transition: "none", changeHash: true, reverse: false }); 
 return false;
 });
 function assignProfileValues(){
