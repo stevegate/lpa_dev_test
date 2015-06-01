@@ -31,13 +31,18 @@ alert('Network error has occurred please try again!');
 
 
 });
-	$( "#basic" ).bind({popupafterclose: function(event, ui) { 
+/*	$( "#tw" ).bind({popupafterclose: function(event, ui) { 
 $.mobile.changePage("two.html", { transition: "none", changeHash: true, reverse: false });
 return false;						
 }
+
+});*/
+
+/*$(document).off('click', '#tw').on('click', '#tw', function(e) { 
+	$.mobile.changePage("two.html", { transition: "none", changeHash: true, reverse: false }); 												           
+ return true;
 });
-
-
+*/
 $(document).off('click', '#page_five_profile').on('click','#page_five_profile',function(){
 $.mobile.changePage("profile.html", { transition: "none", changeHash: false, reverse: false });
 return false;
@@ -51,6 +56,8 @@ return false;
 
 		pagination2();
 	});
+
+
 
 	$(document).off('click', '#five_signout').on('click', '#five_signout', function() {
 		sessionStorage.clear(); 
@@ -71,6 +78,11 @@ return false;
 
 });
 
+
+$(document).off('click', '#tw').on('click', '#tw', function(e) { 
+	$.mobile.changePage("two.html", { transition: "none", changeHash: true, reverse: false }); 												           
+ return false;
+});
 $(document).off('click', '#five_logo').on('click', '#five_logo', function(e) { 
 	$.mobile.changePage("two.html", { transition: "none", changeHash: true, reverse: false }); 												           
  return true;
@@ -103,10 +115,9 @@ for(a=0;a<category_array.length;a++){
 	var cat = '<p class="cen1" id="category'+c+'">'+category_obj.category+'</p>';
 	$('#pagination').append(cat);
 	for(b=0;b<activity_arr.length;b++){
-
-		activityobj = activity_arr[b];
+activityobj = activity_arr[b];
 var act = '<hr id="hr'+c+'"><p class="cen2" id="activity'+c+'">'+activityobj.activity+'</p> ';
-var div_val = '<div class="ui-grid-c vgb" id="checkbox'+c+'"><div class="ui-block-a "><label class="flo">Yes:</label><input type="radio" id="result_yes'+c+'" name="result_yes'+c+'"  value="yes" ></div><div class="ui-block-b"><label class="flo">No:</label><input type="radio" id="result_yes'+c+'" name="result_yes'+c+'" value="no" class="marl"><br id="result_no_br'+c+'"></div><div class="ui-block-c "><label class="flo">N/A:</label ><input type="radio" id="result_yes'+c+'" name="result_yes'+c+'" value="na" checked></div><div class="ui-block-d"><a href="#" class="ui-btn pls ui-shadow ui-corner-all ui-icon-plus ui-btn-icon-notext"  id="add'+c+'" onclick="showfields('+c+');">Add</a><a href="#" id="minus'+c+'" class="ui-btn pls ui-shadow ui-corner-all ui-icon-minus ui-btn-icon-notext" style="display:none" onclick="hidefields('+c+');" >Minus</a><br id="result_na_br'+c+'" style="display:none;"></div></div><div class="paf"><input type="text"   id="findings'+c+'" name="findings'+c+'" placeholder="Findings" class="dar" style="display:none;"><select name="responsibility'+c+'" id="responsibility'+c+'" onchange="enabledate('+c+');" ><option value="0">Choose Responsibility</option><option value="supervisor">Supervisor</option><option value="Manager">Manager</option><option value="GM">GM</option></select><div class="demo"><input type="text"  id="datepicker'+c+'" class="dar" placeholder="Date" name="datepicker'+c+'" /></div></div>';
+var div_val = '<div class="ui-grid-c vgb" id="checkbox'+c+'"><div class="ui-block-a "><div class="ui-grid-a"><div class="ui-block-a radi"><label class="flo"> Yes:</label></div><div class="ui-block-b"><input type="radio" id="result_yes'+c+'" name="result_yes'+c+'"  value="yes" ></div></div></div><div class="ui-block-b"><div class="ui-grid-a"><div class="ui-block-a radi"><label class="flo">No:</label></div>  <div class="ui-block-b radi"><input type="radio" id="result_yes'+c+'" name="result_yes'+c+'" value="no" class="marl"><br id="result_no_br'+c+'"></div></div></div><div class="ui-block-c "><div class="ui-grid-a"><div class="ui-block-a radi"><label class="flo">N/A:</label ></div><div class="ui-block-b radi"><input type="radio" id="result_yes'+c+'" name="result_yes'+c+'" value="na" checked></div></div></div><div class="ui-block-d"><a href="#" class="ui-btn pls ui-shadow ui-corner-all ui-icon-plus ui-btn-icon-notext"  id="add'+c+'" onclick="showfields('+c+');">Add</a><a href="#" id="minus'+c+'" class="ui-btn pls ui-shadow ui-corner-all ui-icon-minus ui-btn-icon-notext" style="display:none" onclick="hidefields('+c+');" >Minus</a><br id="result_na_br'+c+'" style="display:none;"></div></div><div class="paf"><input type="text"   id="findings'+c+'" name="findings'+c+'" placeholder="Findings" class="dar" style="display:none;"><select name="responsibility'+c+'" id="responsibility'+c+'" onchange="enabledate('+c+');" ><option value="0">Choose Responsibility</option><option value="supervisor">Supervisor</option><option value="Manager">Manager</option><option value="GM">GM</option></select><div class="demo"><input type="text"  id="datepicker'+c+'" class="dar" placeholder="Date" name="datepicker'+c+'" /></div></div>';
 c++;
 $('#pagination').append(act+div_val);
 $('#pagination').enhanceWithin();

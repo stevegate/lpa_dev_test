@@ -16,13 +16,13 @@ $(document).one('pageshow', '#update_one', function(){
 			complete: function() {
 			},
 			success: function (result) {
-				console.log('searchlpa ' +result);
+				console.log('searchlpa' +result);
 				if(result[0]){
 					var list="";
 					for(a=0;a<result[1].length;a++){
 						obj = result[1][a];
 						var partstr = "'"+obj.part_id+"'";
-						list+='<li><a href="#" onclick="searchlpa('+partstr+')" >'+result[1][a].part_id+'</li>';
+						list+='<li><a href="#" class="list" onclick="searchlpa('+partstr+')" >'+result[1][a].part_id+'</li>';
 					}
 					$('#part_ui_list').css({'display':''});
 					$('#h3_up').css({'display':''});
@@ -78,7 +78,7 @@ function searchlpa(part){
 		complete: function() {
 		},
 		success: function (result) {
-			console.log('searchlpa ' +result);
+			console.log('searchlpa' +result);
 			if(result[0]){
 				$("#popupsearchmade").popup("open");
 				sessionStorage.setItem("update_category_data",JSON.stringify(result[1]));
@@ -210,7 +210,6 @@ $('#demo').on( "tap", function() {
 			picker.mobipick();
 			picker.on( "change", function() {
 					var date = $( this ).val();
-
 					// formatted date					
 					var dateObject = $( this ).mobipick( "option", "date" );
 			});

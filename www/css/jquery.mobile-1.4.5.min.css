@@ -392,7 +392,7 @@ li.mobipick-hide {
 	  border-style: none;
 }
 .ui-mobile label{
-	  font-size: 120% !important;
+	  font-size: 100% !important;
 }
 
 .ui-corner-all{
@@ -447,4 +447,33 @@ text-align: center;
 }
 .ui-page-theme-a .ui-btn{
 	border-style: none !important;
+}
+.ui-page-theme-a .list{
+   font-size: 120%!important;
+  font-weight: 600;
+}
+/*.ui-listview>li>a.ui-btn{
+	font-size: 120%!important;
+  font-weight: 500;
+}
+.ui-listview>li>a.ui-btn:hover{
+	font-size: 120%!important;
+  font-weight: 500;
+}
+.ui-listview>li>a.ui-btn:focus{
+	font-size: 120%!important;
+  font-weight: 500;
+}
+.ui-listview>li>a.ui-btn:visited{
+	font-size: 120%!important;
+  font-weight: 500;
+}*/
+.ui-page-theme-a .radi{
+  width:20%!important;
+}
+.ui-page-theme-a .radiu{
+  width:20%!important;
+}
+.ui-page-theme-a .wii{
+	margin-right:20px !important; 
 }

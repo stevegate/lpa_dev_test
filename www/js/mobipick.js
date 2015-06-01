@@ -21,8 +21,8 @@
 $.widget( "sustainablepace.mobipick", $mobile.widget, {
 	options: {
 		date            : null,
-		dateFormat      : "yyyy-MM-dd",
-		dateFormatMonth : "yyyy-MM",
+		dateFormat      : "dd-MM-yyyy",
+		dateFormatMonth : "MM-yyyy",
 		dateFormatYear  : "yyyy",
 		inputOrder      : "d m y",
 		locale          : "en",

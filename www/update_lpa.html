@@ -6,32 +6,27 @@
 <script src="js/jquery-1.11.2.min.js"></script>
 <script>
     $(document).on("mobileinit", function () {
-        /*$.mobile.hashListeningEnabled = false;
-        $.mobile.pushStateEnabled = false;
-	$.mobile.changePage.defaults.changeHash = false;
-	$.mobile.defaultPageTransition = 'none'*/
+
     });
 </script>
-
+<style type="text/css">
+    input {
+      margin: 2em 0;
+    }
+  </style>
+  <link href="css/mobipick.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="demo/shCore.js"></script>
 <script src="js/jquery.mobile-1.4.5.min.js"></script>
-<!--datepicker-->
-<script src="js/jquery.ui.datepicker.js"></script>
-<script id="mobile-datepicker" src="js/jquery.mobile.datepicker.js"></script>
-<link rel="stylesheet" href="css/jquery.mobile.datepicker.css">
-<!--datepicker end-->
-
 <link href='css/googlefonts.css' rel='stylesheet' type='text/css'>
 <link href='css/mobil.css' rel='stylesheet' type='text/css'>
-<style >
-
-</style>
 </head>
-
-
 <body>
 <!--main page-->
 <div data-role="page" id="update_lpa">   
 <script src="js/update_lpa.js"></script>
+  <script type="text/javascript" src="external/xdate.js"></script> 
+  <script type="text/javascript" src="js/mobipicka.js"></script>
+
         
 <!--navbar-->   
 <div data-role="navbar" data-grid="c" data-theme="e" class="fix">
@@ -42,17 +37,17 @@
         <li class="navc"><a href="#overlayPanel_update_lpa">  <span><button class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bars babut"></button></span></a></li>
     </ul>
 </div><!-- /navbar end-->
-<h3 class="ui-bar ui-bar-a texs" >Update LPA</h3>
+
 
 <!--panel slider-->
 <div data-role="panel" id="overlayPanel_update_lpa" data-display="overlay" data-position="right" data-dismissible="true" data-swipe-close="false"> 
       <ul data-role="listview" data-inset="true">
-      <li id="update_lpa_profile"><a href="#" class="ui-btn ui-icon-carat-l ui-btn-icon-left" >My Profile</a></li>
-      <li id="update_lpa_create"><a href="#" class="ui-btn ui-icon-carat-l ui-btn-icon-left">Create LPA</a></li>
-      <li id="update_lpa_two"><a href="#" class="ui-btn ui-icon-carat-l ui-btn-icon-left" >Update LPA</a></li>
+      <li id="update_lpa_profile"><a href="#" class="ui-btn ui-icon-carat-l ui-btn-icon-left" ><span class="ww">My Profile</span></a></li>
+      <li id="update_lpa_create"><a href="#" class="ui-btn ui-icon-carat-l ui-btn-icon-left"><span class="ww">Create LPA</span></a></li>
+      <li id="update_lpa_two"><a href="#" class="ui-btn ui-icon-carat-l ui-btn-icon-left" ><span class="ww">Update LPA</span></a></li>
      <!-- <li><a href="#" class="ui-btn ui-icon-carat-l ui-btn-icon-left">Reports</a></li>-->
       </ul>
-      <a href="#" id="update_lpa_signout" class="ui-btn  sio ui-icon-power ui-btn-icon-left">Sign Out</a>
+      <a href="#" id="update_lpa_signout" class="ui-btn  sio ui-icon-power ui-btn-icon-left"><span class="ww si">Sign Out</span></a>
 </div> <!--panel slider end-->
 
 <!--content page-->
@@ -69,12 +64,10 @@
   <input type="hidden" name="user_id" id="user_id" >              
 
 <div data-role="main" class="ui-content pod" id="update_pagination">
- 
-
-</div><!--content div end-->
-<form>
-
-  <div class="ui-grid-a"><!--prev next button-->
+<h3 class="ui-bar ui-bar-a texs" >Update LPA</h3>
+ </form>
+</div>
+  <div class="ui-grid-a wii"><!--prev next button-->
       <div class="ui-block-a">
       <a href="#" class="ui-btn ui-corner-all ui-shadow but ui-state-persist ui-btn-active" id="update_prev" style="background: green; color: white;" >PREVIOUS</a><br>
       </div>
@@ -82,27 +75,24 @@
         <a href="#" id="update_next" class="ui-btn ui-corner-all ui-shadow but ui-state-persist ui-btn-active" data-role="button" >NEXT</a><br>
   </div>
   </div><!--prev next button end-->
-  
-  <div class="cena"><!--SUBMIT BUTTON-->
-        <a href="#"class="ui-btn ui-corner-all ui-shadow but ui-state-persist ui-btn-active"  id="lpa_update_btn">UPDATE</a><br>
-    </div>
 
-  <div  data-role="popup" id="basica" data-transition="pop" data-overlay-theme="a" class="bam">
-            <p class="yellow">Data Updated Succesfully</p>
-           <a href="#" data-rel="back"> <button type="submit"  class="ui-btn butms" >Ok</button></a>
-  </div>
+     <div class="cena">
+ <a href="#myPopupDialog" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-shadow but "  id="lpa_update_btn">UPDATE</a>
+ </div>
+  <div data-role="popup" id="basica"  class="bam">
+      <p class="yellow">Data Updated Succesfully</p>
+    <a href="#" class="ui-btn butms" id="twu" data-rel="back">Ok</a>
+      </div>
 
-   <!-- <div  data-role="popup" id="myPopup" data-transition="pop" data-overlay-theme="a" class="bam">
-            <p class="yellow">Data Updated Successfully</p>
-           <a href="" data-rel="back"> <button type="submit"  class="ui-btn butms" >OK</button></a>
-  </div>-->
+<br><br>
 
-  <div data-role="footer" id="#footer" data-position="fixed"><!--footer-->
-  
-  
+
+  <div data-role="footer" id="footer">
 <marquee>LPA Tool by Service Center India</marquee>
-  </div>  <!--footer end-->
-  </div> <!---main div page end-->
+</div>  
+</div>
+</div> <!---main div page end-->
+
 
 </body>
 </html>
