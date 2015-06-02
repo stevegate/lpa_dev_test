@@ -34,7 +34,7 @@ $.widget( "sustainablepace.mobipick", $mobile.widget, {
 			overlayTheme: "a",
 			positionTo: "window",
 			theme: "a",
-			transition: "slide"
+			transition: "none"
 		}
 	},
 	// Controller

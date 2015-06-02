@@ -1,6 +1,6 @@
 $(document).on('pagecreate', '#pageone', function(){ 
     if(sessionStorage.getItem("logged_in")=="1"){
-        $.mobile.changePage("two.html", { transition: "slide", changeHash: true, reverse: false }); 
+        $.mobile.changePage("two.html", { transition: "none", changeHash: true, reverse: false }); 
     }
 $(document).off('click', '#submit').on('click', '#submit', function() { 
     if($('#username').val().length > 0 && $('#password').val().length > 0){
@@ -25,7 +25,7 @@ success: function (result) {
         sessionStorage.setItem("category_data",JSON.stringify(result[3]));
         sessionStorage.setItem("activity_data",JSON.stringify(result[4]));
         $.mobile.loading().hide();
-        $.mobile.changePage("two.html", { transition: "slide", changeHash: true, reverse: false }); 
+        $.mobile.changePage("two.html", { transition: "none", changeHash: true, reverse: false }); 
     }else {
         $.mobile.loading().hide();
         alert("username or password entered is invalid");	

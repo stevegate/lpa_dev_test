@@ -32,19 +32,19 @@ alert('Network error has occurred please try again!');
 
 });
 /*	$( "#tw" ).bind({popupafterclose: function(event, ui) { 
-$.mobile.changePage("two.html", { transition: "slide", changeHash: true, reverse: false });
+$.mobile.changePage("two.html", { transition: "none", changeHash: true, reverse: false });
 return false;						
 }
 
 });*/
 
 /*$(document).off('click', '#tw').on('click', '#tw', function(e) { 
-	$.mobile.changePage("two.html", { transition: "slide", changeHash: true, reverse: false }); 												           
+	$.mobile.changePage("two.html", { transition: "none", changeHash: true, reverse: false }); 												           
  return true;
 });
 */
 $(document).off('click', '#page_five_profile').on('click','#page_five_profile',function(){
-$.mobile.changePage("profile.html", { transition: "slide", changeHash: false, reverse: false });
+$.mobile.changePage("profile.html", { transition: "none", changeHash: false, reverse: false });
 return false;
 });
 	$(document).off('click', '#prev1').on('click', '#prev1', function() { 
@@ -61,7 +61,7 @@ return false;
 
 	$(document).off('click', '#five_signout').on('click', '#five_signout', function() {
 		sessionStorage.clear(); 
-$.mobile.changePage("index.html", { transition: "slide", changeHash: true, reverse: false }); 
+$.mobile.changePage("index.html", { transition: "none", changeHash: true, reverse: false }); 
 return false;
 });
 
@@ -80,22 +80,22 @@ return false;
 
 
 $(document).off('click', '#tw').on('click', '#tw', function(e) { 
-	$.mobile.changePage("two.html", { transition: "slide", changeHash: true, reverse: false }); 												           
+	$.mobile.changePage("two.html", { transition: "none", changeHash: true, reverse: false }); 												           
  return false;
 });
 $(document).off('click', '#five_logo').on('click', '#five_logo', function(e) { 
-	$.mobile.changePage("two.html", { transition: "slide", changeHash: true, reverse: false }); 												           
+	$.mobile.changePage("two.html", { transition: "none", changeHash: true, reverse: false }); 												           
  return true;
 });
 
 $(document).off('click', '#page_five_create').on('click', '#page_five_create', function(e) { 
-	$.mobile.changePage("three.html", { transition: "slide", changeHash: true, reverse: false }); 												            
+	$.mobile.changePage("three.html", { transition: "none", changeHash: true, reverse: false }); 												            
 	return true;
 });
 
 
 $(document).off('click', '#page_five_update').on('click', '#page_five_update', function(e) { 
-	$.mobile.changePage("update_one.html", { transition: "slide", changeHash: true, reverse: false }); 												            
+	$.mobile.changePage("update_one.html", { transition: "none", changeHash: true, reverse: false }); 												            
 	return true;
 });
 
