@@ -6,7 +6,7 @@ $(document).off('click', '#next1').on('click', '#next1', function(e2) {
 		sessionStorage.setItem("partno",JSON.stringify($("#partno").val()));
 		sessionStorage.setItem("datepicker",JSON.stringify($("#datepicker").val()));
 		sessionStorage.setItem("shift",JSON.stringify($("#shift").val()));
-		$.mobile.changePage("five.html", { transition: "none", changeHash: true, reverse: false});
+		$.mobile.changePage("five.html", { transition: "slide", changeHash: true, reverse: false});
 	}else {
 		$( "#popupcreatelpa" ).popup("open");
 	}
@@ -15,16 +15,16 @@ $(document).off('click', '#next1').on('click', '#next1', function(e2) {
 });
 
 $(document).off('click', '#page_three_profile').on('click','#page_three_profile', function(e1){
-	$.mobile.changePage("profile.html", { transition: "none", changeHash: true, reverse: false });
+	$.mobile.changePage("profile.html", { transition: "slide", changeHash: true, reverse: false });
 return false;
 });
 $(document).off('click', '#three_logo').on('click', '#three_logo', function(e) { 
-	$.mobile.changePage("two.html", { transition: "none", changeHash: true, reverse: false });
+	$.mobile.changePage("two.html", { transition: "slide", changeHash: true, reverse: false });
 return false;
 });
 $(document).off('click', '#three_update').on('click','#three_update',function(e2){
 		$('#update_one').remove();
-		$.mobile.changePage("update_one.html", { transition: "none", changeHash: true, reverse: false });							 						
+		$.mobile.changePage("update_one.html", { transition: "slide", changeHash: true, reverse: false });							 						
 		e2.stopPropagation();
 		e2.preventDefault();
 		return false;
@@ -32,7 +32,7 @@ $(document).off('click', '#three_update').on('click','#three_update',function(e2
 });
 $(document).off('click', '#three_signout').on('click', '#three_signout', function() {
 	sessionStorage.clear(); 
-	$.mobile.changePage("index.html", { transition: "none", changeHash: true, reverse: false }); 
+	$.mobile.changePage("index.html", { transition: "slide", changeHash: true, reverse: false }); 
 return false;
 });
 e.preventDefault();

@@ -22,7 +22,7 @@ $(document).one('pagecreate', '#update_lpa', function(){
 				console.log(result);
 
 				$('#basica').popup('open'); 
-				return false;
+				return true;
 			},
 			error: function (request,error) {
 
@@ -37,7 +37,7 @@ $(document).one('pagecreate', '#update_lpa', function(){
 	});
 
 	/*$( "#basica" ).bind({popupafterclose: function(event, ui) { 
-$.mobile.changePage("two.html", { transition: "none", changeHash: true, reverse: false });
+$.mobile.changePage("two.html", { transition: "slide", changeHash: true, reverse: false });
 return false;						
 }
 
@@ -64,18 +64,18 @@ return false;
 });
 
 $(document).off('click', '#twu').on('click', '#twu', function(e) { 
-	$.mobile.changePage("two.html", { transition: "none", changeHash: true, reverse: false }); 												           
+	$.mobile.changePage("two.html", { transition: "slide", changeHash: true, reverse: false }); 												           
  return false;
 });
 
 $(document).on('click', '#update_logo', function(e) { 
-	$.mobile.changePage("two.html", { transition: "none", changeHash: true, reverse: false }); 												           
+	$.mobile.changePage("two.html", { transition: "slide", changeHash: true, reverse: false }); 												           
 	 return true;
 });
 
 $(document).off('click', '#update_lpa_signout').on('click', '#update_lpa_signout', function() {
 	sessionStorage.clear(); 
-$.mobile.changePage("index.html", { transition: "none", changeHash: true, reverse: false }); 
+$.mobile.changePage("index.html", { transition: "slide", changeHash: true, reverse: false }); 
 return false;
 });
 function assignValues(){
@@ -271,19 +271,19 @@ if(lpasubmit!=''){
 }
 }
 $(document).off('click', '#update_lpa_profile').on('click','#update_lpa_profile', function(e1){
-	$.mobile.changePage("profile.html", { transition: "none", changeHash: false, reverse: false });
+	$.mobile.changePage("profile.html", { transition: "slide", changeHash: false, reverse: false });
 	return false;
 });
 
 $(document).off('click', '#update_lpa_logo').on('click', '#update_lpa_logo', function(e) { 
-	$.mobile.changePage("two.html", { transition: "none", changeHash: true, reverse: false }); 												        	    return true;
+	$.mobile.changePage("two.html", { transition: "slide", changeHash: true, reverse: false }); 												        	    return true;
 });
 
 $(document).off('click', '#update_lpa_create').on('click', '#update_lpa_create', function(e) { 
-	$.mobile.changePage("three.html", { transition: "none", changeHash: true, reverse: false }); 												            return true;
+	$.mobile.changePage("three.html", { transition: "slide", changeHash: true, reverse: false }); 												            return true;
 });
 
 $(document).off('click', '#update_lpa_two').on('click', '#update_lpa_two', function(e) { 
-	$.mobile.changePage("update_one.html", { transition: "none", changeHash: true, reverse: false }); 												            return true;
+	$.mobile.changePage("update_one.html", { transition: "slide", changeHash: true, reverse: false }); 												            return true;
 });
 	
