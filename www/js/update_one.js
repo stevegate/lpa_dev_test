@@ -16,7 +16,7 @@ $(document).one('pageshow', '#update_one', function(){
 			complete: function() {
 			},
 			success: function (result) {
-				console.log('searchlpa' +result);
+				console.log('searchlpa'+result);
 				if(result[0]){
 					var list="";
 					for(a=0;a<result[1].length;a++){

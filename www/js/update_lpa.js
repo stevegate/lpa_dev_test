@@ -22,7 +22,7 @@ $(document).one('pagecreate', '#update_lpa', function(){
 				console.log(result);
 
 				$('#basica').popup('open'); 
-				return true;
+				return false;
 			},
 			error: function (request,error) {
 

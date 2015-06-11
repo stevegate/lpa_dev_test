@@ -45,23 +45,14 @@ function assignValues(){
 	$country = $('#country')
 	userobject = JSON.parse(sessionStorage.getItem("user_data"));
 	plant_array = 	JSON.parse(sessionStorage.getItem("plant_data"));
-	category_array = 	sessionStorage.getItem("category_data");	
-	response4 = 	sessionStorage.getItem("activity_data");	
+	category_array = sessionStorage.getItem("category_data");	
+	response4 = sessionStorage.getItem("activity_data");	
 	$('#employee_name_three').text(''+userobject.firstname+' '+userobject.lastname);
 	$('#employee_id_three').text(userobject.username);
 	var cont='<span class="mo" >'+userobject.firstname+'</span> <span class="mo" id="employeeid">   Id :'+userobject.firstname+'</span>'
 	console.log('page2');
 	console.log('userobject.firstname' + userobject.firstname);
-/*	
-	var today = new Date();   
-	var dd = today.getDate();
-var mm = today.getMonth()+1; 
-if(mm<=9){
-	mm ='0'+mm;
-}				
-var yyyy = today.getFullYear();    
 
-$('#datepicker').val(yyyy + '-' + mm + '-' + dd);*/
 plant_array.forEach(function(currentResult) {
 	var currregion = currentResult.region;
 	var appendFlag = false;
