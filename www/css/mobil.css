@@ -20,13 +20,13 @@ border-color: #a8d4b0 !important;
 .cen{
   text-align: center;
   font-family:sans-serif;
-  font-size: 15px;
+  font-size:18px 15px;
 }
 .mo{
   margin-right: 1px;
 margin-top: 3px;
 font-family: Roboto;
-font-size: 16px;
+font-size:18px 16px;
 color: #322C2C;
 text-shadow: none;
 }
@@ -35,13 +35,13 @@ text-shadow: none;
 }
 .about{
   font-family: Roboto;
-  font-size: 15px;
+  font-size:18px 15px;
 color:#606366;
 }
 
 .label .profile{
   font-family: Roboto;
-  font-size: 17px;
+  font-size:18px 17px;
 	color:#606366;
 }
 
@@ -102,7 +102,7 @@ margin-top:4% !important;
    margin-right: 10px !important;
 margin-top: 3px;
 font-family: Roboto;
-font-size: 16px;
+font-size:18px 16px;
 color: #322C2C;
 text-shadow: none;
 }
@@ -175,14 +175,14 @@ background-size: 100% 100%;
 }
 .nava{
 	font-family: sans-serif;
-	font-size:120%;
+	font-size:18px120%;
 	font-weight:500;
   color:#007032;
 }
 
 .navb{
 	font-family: sans-serif;
-font-size:120%;
+font-size:18px120%;
 font-weight:500;
   color:#007032;
 }
@@ -190,21 +190,21 @@ font-weight:500;
 .cen1{
   text-align: center;
   font-family:sans-serif;
-  font-size: 13px;
+  font-size:18px 13px;
   font-weight:bold;
   line-height: 1px;
 }
 .cen2{
   text-align: center;
   font-family:sans-serif;
-  font-size: 12px;
+  font-size:18px 12px;
   font-weight:bold;
 }
 
 .cen3{
   text-align: left;
   font-family:sans-serif;
-  font-size: 20px;
+  font-size:18px 20px;
   font-weight:bold;
   margin-left:5px;
 }
@@ -212,7 +212,7 @@ font-weight:500;
 .cen4{
   text-align: center;
   font-family:sans-serif;
-  font-size: 22px;
+  font-size:18px 22px;
   font-weight:bold;
   margin-left:5px;
 }
@@ -304,12 +304,12 @@ border-radius: 0px!important;
 /* april16 */
 
 .cen5{
-  font-size:15px;
+  font-size:18px15px;
   font-weight: 500;
 
 }
 .cen4{
-  font-size:18px !important;
+  font-size:18px18px !important;
   font-weight: 500;
   margin-bottom: -2px;
 }
@@ -337,13 +337,13 @@ border-radius: 0px!important;
 .texs {
     text-align: center;
     margin-top: -10px !important;
-    font-size: 14px;
+    font-size:18px 14px;
 }
 
-.ui-panel-animate.ui-panel-position-right.ui-panel-display-overlay {
-  margin-top: 51px;
+/*.ui-panel-animate.ui-panel-position-right.ui-panel-display-overlay {
+  margin-top: 48px;
   background-color: #a8d4b0 !important;
-}
+}*/
 /*april 29*/
 .ui-footer {
     border-width: 1px 0px;
@@ -396,7 +396,7 @@ margin-top:4% !important;
   padding-left:35px !important;
 }
 .cen5{
-  font-size:15px;
+  font-size:18px15px;
   font-weight: 500;
 background-color: #A8D4B0;
 }
@@ -611,7 +611,7 @@ background-size: 100% 100%;
 .texsb{
   text-align: center;
   margin-top: -1px !important;
-  font-size: 14px;
+  font-size:18px 14px;
   position: static !important;
   padding: .4em 1em;
   overflow: hidden;
@@ -662,7 +662,7 @@ background-size: 100% 100%;
   margin-right: 35% !important;
 }
 .ww {
-  font-size: 120%!important;
+  font-size:18px 120%!important;
   font-weight: 600;
   color: rgb(0, 112, 50);
 }
@@ -672,17 +672,17 @@ background-size: 100% 100%;
 
 @media only screen and (min-width:480px) and (max-width: 640px)  {
   .texsc{
-  font-size: 120% !important;
+  font-size:18px 120% !important;
 }
 .texs {
-   font-size: 120% !important;
+   font-size:18px 120% !important;
   }
 }
 /*june 12*/
 .texsa{
   text-align: center;
   margin-top: 15px !important;
-  font-size: 14px;
+  font-size:18px 14px;
   position: static !important;
   padding: .4em 1em;
   overflow: hidden;
@@ -695,10 +695,10 @@ background-size: 100% 100%;
 .texs {
     text-align: center;
     margin-top: 0px !important;
-    font-size: 14px;
+    font-size:18px 14px;
    text-align: center;
   margin-top: 55px !important;
-  font-size: 14px;
+  font-size:18px 14px;
   position: static !important;
   padding: .4em 1em;
   overflow: hidden;
@@ -710,10 +710,10 @@ background-size: 100% 100%;
 .texsc{
     text-align: center;
   margin-top: 0px !important;
-  font-size: 14px;
+  font-size:18px 14px;
   text-align: center;
   /* margin-top: 55px !important; */
-  font-size: 14px;
+  font-size:18px 14px;
   position: static !important;
   padding: .4em 1em;
   overflow: hidden;

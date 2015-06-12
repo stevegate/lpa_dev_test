@@ -1209,14 +1209,14 @@ body.ui-mobile-viewport,div.ui-mobile-viewport {
 }
 
 .ui-loader-default h1 {
-  font-size: 0;
+  font-size:18px 0;
   width: 0;
   height: 0;
   overflow: hidden;
 }
 
 .ui-loader-verbose h1 {
-  font-size: 16px;
+  font-size:18px 16px;
   margin: 0;
   text-align: center;
 }
@@ -1265,14 +1265,14 @@ body.ui-mobile-viewport,div.ui-mobile-viewport {
 }
 
 .ui-bar {
-  font-size: 16px;
+  font-size:18px 16px;
   margin: 0;
 }
 
 .ui-bar h1,.ui-bar h2,.ui-bar h3,.ui-bar h4,.ui-bar h5,.ui-bar h6 {
   margin: 0;
   padding: 0;
-  font-size: 16px;
+  font-size:18px 16px;
   display: inline-block;
 }
 
@@ -1303,7 +1303,7 @@ body.ui-mobile-viewport,div.ui-mobile-viewport {
 .ui-header .ui-title,.ui-footer .ui-title {
   min-height: 1.1em;
   text-align: center;
-  font-size: 16px;
+  font-size:18px 16px;
   display: block;
   margin: .6em 30% .8em;
   padding: 0;
@@ -2428,7 +2428,7 @@ body.ui-mobile-viewport,div.ui-mobile-viewport {
 }
 
 .ui-btn-inner {
-  font-size: 16px;
+  font-size:18px 16px;
   padding: .6em 20px;
   min-width: .75em;
   display: block;
@@ -2466,12 +2466,12 @@ body.ui-mobile-viewport,div.ui-mobile-viewport {
 }
 
 .ui-header .ui-btn-inner,.ui-footer .ui-btn-inner,.ui-mini .ui-btn-inner {
-  font-size: 12.5px;
+  font-size:18px 12.5px;
   padding: .55em 11px .5em;
 }
 
 .ui-fullsize .ui-btn-inner,.ui-fullsize .ui-btn-inner {
-  font-size: 16px;
+  font-size:18px 16px;
   padding: .6em 20px;
 }
 
@@ -2606,7 +2606,7 @@ body.ui-mobile-viewport,div.ui-mobile-viewport {
   background: rgba(255,255,255,0);
   filter: Alpha(Opacity=0);
   opacity: .1;
-  font-size: 1px;
+  font-size:18px 1px;
   border: none;
   text-indent: -9999px;
 }
@@ -2624,7 +2624,7 @@ body.ui-mobile-viewport,div.ui-mobile-viewport {
 }
 
 label.ui-submit {
-  font-size: 16px;
+  font-size:18px 16px;
   line-height: 1.4;
   font-weight: normal;
   margin: 0 0 .3em;
@@ -2659,7 +2659,7 @@ label.ui-submit {
 }
 
 .ui-collapsible-heading {
-  font-size: 16px;
+  font-size:18px 16px;
   display: block;
   margin: 0 -15px;
   padding: 0;
@@ -2781,7 +2781,7 @@ label.ui-submit {
 }
 
 .ui-controlgroup-label {
-  font-size: 16px;
+  font-size:18px 16px;
   line-height: 1.4;
   font-weight: normal;
   margin: 0 0 .4em;
@@ -2872,7 +2872,7 @@ label.ui-submit {
 }
 
 .ui-controlgroup .ui-checkbox label,.ui-controlgroup .ui-radio label {
-  font-size: 16px;
+  font-size:18px 16px;
 }
 
 @media all and (min-width:450px) {
@@ -2990,7 +2990,7 @@ label.ui-submit {
 }
 
 .ui-popup .ui-title {
-  font-size: 16px;
+  font-size:18px 16px;
   font-weight: bold;
   margin-top: .5em;
   margin-bottom: .5em;
@@ -3026,7 +3026,7 @@ label.ui-submit {
 
 @media all and (min-width:450px) {
   .ui-popup .ui-field-contain label.ui-submit,.ui-popup .ui-field-contain .ui-controlgroup-label,.ui-popup .ui-field-contain label.ui-select,.ui-popup .ui-field-contain label.ui-input-text {
-    font-size: 16px;
+    font-size:18px 16px;
     line-height: 1.4;
     display: block;
     font-weight: normal;
@@ -3309,7 +3309,7 @@ label.ui-submit {
 }
 
 label.ui-select {
-  font-size: 16px;
+  font-size:18px 16px;
   line-height: 1.4;
   font-weight: normal;
   margin: 0 0 .3em;
@@ -3389,7 +3389,7 @@ label.ui-select {
 }
 
 label.ui-input-text {
-  font-size: 16px;
+  font-size:18px 16px;
   line-height: 1.4;
   display: block;
   font-weight: normal;
@@ -3401,7 +3401,7 @@ input.ui-input-text,textarea.ui-input-text {
   padding: .4em;
   margin: .5em 0;
   line-height: 1.4;
-  font-size: 16px;
+  font-size:18px 16px;
   display: block;
   width: 100%;
   outline: 0;
@@ -3486,7 +3486,7 @@ textarea.ui-input-text {
 }
 
 input.ui-mini,.ui-mini input,textarea.ui-mini {
-  font-size: 14px;
+  font-size:18px 14px;
 }
 
 textarea.ui-mini {
@@ -3570,12 +3570,12 @@ ol.ui-listview,ol.ui-listview .ui-li-divider {
 
 .ui-li-divider {
   padding: .5em 15px;
-  font-size: 14px;
+  font-size:18px 14px;
   font-weight: bold;
 }
 
 ol.ui-listview .ui-link-inherit:before,ol.ui-listview .ui-li-static:before,.ui-li-dec {
-  font-size: .8em;
+  font-size:18px .8em;
   display: inline-block;
   padding-right: .3em;
   font-weight: normal;
@@ -3650,7 +3650,7 @@ ol.ui-listview .ui-li-jsnumbering:before {
 }
 
 .ui-li-heading {
-  font-size: 16px;
+  font-size:18px 16px;
   font-weight: bold;
   display: block;
   margin: .6em 0;
@@ -3660,7 +3660,7 @@ ol.ui-listview .ui-li-jsnumbering:before {
 }
 
 .ui-li-desc {
-  font-size: 12px;
+  font-size:18px 12px;
   font-weight: normal;
   display: block;
   margin: -.5em 0 .6em;
@@ -3716,7 +3716,7 @@ ol.ui-listview .ui-li-jsnumbering:before {
 
 .ui-li-has-count .ui-li-count {
   position: absolute;
-  font-size: 11px;
+  font-size:18px 11px;
   font-weight: bold;
   padding: .2em .5em;
   top: 50%;
@@ -3821,7 +3821,7 @@ ol.ui-listview .ui-li-jsnumbering:before {
 }
 
 label.ui-slider {
-  font-size: 16px;
+  font-size:18px 16px;
   line-height: 1.4;
   font-weight: normal;
   margin: 0 0 .3em;
@@ -3835,14 +3835,14 @@ input.ui-slider-input,.ui-field-contain input.ui-slider-input {
   padding: .4em;
   margin: .5em 0;
   line-height: 1.4;
-  font-size: 16px;
+  font-size:18px 16px;
   outline: 0;
 }
 
 input.ui-slider-input.ui-mini,.ui-field-contain input.ui-slider-input.ui-mini {
   width: 45px;
   margin: .25em 0;
-  font-size: 14px;
+  font-size:18px 14px;
 }
 
 .ui-field-contain input.ui-slider-input {
@@ -3981,7 +3981,7 @@ span.ui-slider-label {
   text-align: center;
   width: 100%;
   overflow: hidden;
-  font-size: 16px;
+  font-size:18px 16px;
   top: 0;
   line-height: 2;
   min-height: 100%;
@@ -3990,7 +3990,7 @@ span.ui-slider-label {
 }
 
 .ui-slider-mini span.ui-slider-label {
-  font-size: 14px;
+  font-size:18px 14px;
 }
 
 span.ui-slider-label-a {

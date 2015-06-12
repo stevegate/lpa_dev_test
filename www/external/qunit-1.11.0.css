@@ -14,8 +14,8 @@
 	font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif;
 }
 
-#qunit-testrunner-toolbar, #qunit-userAgent, #qunit-testresult, #qunit-tests li { font-size: small; }
-#qunit-tests { font-size: smaller; }
+#qunit-testrunner-toolbar, #qunit-userAgent, #qunit-testresult, #qunit-tests li { font-size:18px small; }
+#qunit-tests { font-size:18px smaller; }
 
 
 /** Resets */
@@ -34,7 +34,7 @@
 	color: #8699a4;
 	background-color: #0d3349;
 
-	font-size: 1.5em;
+	font-size:18px 1.5em;
 	line-height: 1em;
 	font-weight: normal;
 
@@ -113,7 +113,7 @@
 
 #qunit-tests li .runtime {
 	float: right;
-	font-size: smaller;
+	font-size:18px smaller;
 }
 
 .qunit-assert-list {
