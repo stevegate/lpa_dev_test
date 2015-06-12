@@ -78,6 +78,7 @@ newCountryList.forEach(function(currentCountry) {
 	if (appendFlag == false) $country.append($('<option>', {
 		value: currentCountry.country, text: currentCountry.country }));
 });
+
 $('#country').val(userobject.country).attr('selected', true);
 $('#country').selectmenu("refresh", true);
 var currentCountry = $("#country option:selected" ).val();
