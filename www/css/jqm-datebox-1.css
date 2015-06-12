@@ -110,7 +110,7 @@ div.ui-datebox-container.ui-datebox-inline {
 	vertical-align: middle;
 	text-align: center;
 	font-weight: bold;
-	font-size:18px 12px;
+	font-size: 12px;
 	zoom: 1;
 	*display: inline;
 }
@@ -122,7 +122,7 @@ div.ui-datebox-container.ui-datebox-inline {
 	vertical-align: middle;
 	text-align: center;
 	font-weight: bold;
-	font-size:18px 12px;
+	font-size: 12px;
 	zoom: 1;
 	*display: inline;
 }
@@ -262,34 +262,34 @@ div.ui-datebox-cbut.ui-btn.ui-corner-all.ui-icon-minus {
 	width: 84px;
 	line-height: 30px;
 	height: 30px;
-	font-size:18px 14px;
+	font-size: 14px;
 }
 .ui-datebox-slidemonth {
 	width: 51px;
 	line-height: 30px;
 	height: 30px;
-	font-size:18px 12px;
+	font-size: 12px;
 }
 .ui-datebox-slideday {
 	width: 32px;
 	line-height: 20px;
 	height: 38px;
-	font-size:18px 14px;
+	font-size: 14px;
 }
 .ui-datebox-slidehour {
 	width: 32px;
 	line-height: 22px;
 	height: 24px;
-	font-size:18px 14px;
+	font-size: 14px;
 }
 .ui-datebox-slidemins {
 	width: 32px;
 	line-height: 22px;
 	height: 24px;
-	font-size:18px 14px;
+	font-size: 14px;
 }
 .ui-datebox-slidewday {
-	font-size:18px 10px;
+	font-size: 10px;
 	font-weight: normal;
 }
 

@@ -64,7 +64,7 @@ div.hasDatepicker {
 	text-align: center;
 }
 .ui-datepicker .ui-datepicker-title select {
-	font-size:18px1em; margin:1px 0;
+	font-size:1em; margin:1px 0;
 }
 .ui-datepicker select.ui-datepicker-month-year {
 	width: 100%;
@@ -91,7 +91,7 @@ div.hasDatepicker {
 	text-align: center;
 	text-decoration: none;
 	/* from .ui-btn class */
-	font-size:18px 16px;
+	font-size: 16px;
 	position: relative;
 	text-overflow: ellipsis;
 	overflow: hidden;
