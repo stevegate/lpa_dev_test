@@ -1,5 +1,5 @@
 <widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.advs.manhummel.lpa" version="1.0.0">
-  <name>LPA FLASH2</name>
+  <name>LPA FLASH3</name>
   <description>LPA App by Mann Hummel</description>
   <author href="http://advicesync.com" email="support@advicesync.com">eImpressive</author>
   <content src="index.html"/>
@@ -28,30 +28,48 @@
   <gap:plugin name="org.apache.cordova.splashscreen"/>
   <plugin name="DatePickerPlugin" value="com.bikasv.plugins.datepicker.DatePickerPlugin"/>
   <icon src="icon.png"/>
-
-  <icon src="www/res/icon/android/icon-36-ldpi.png" gap:platform="android" gap:qualifier="ldpi"/>
-  <icon src="www/res/icon/android/icon-48-mdpi.png" gap:platform="android" gap:qualifier="mdpi"/>
-  <icon src="www/res/icon/android/icon-72-hdpi.png" gap:platform="android" gap:qualifier="hdpi"/>
-  <icon src="www/res/icon/android/icon-96-xhdpi.png" gap:platform="android" gap:qualifier="xhdpi"/>
-  <icon src="www/res/icon/blackberry/icon-80.png" gap:platform="blackberry"/>
+<!-- android -->
+  <icon src="www/images/icon/icon-36-ldpi.png" gap:platform="android" gap:qualifier="ldpi"/>
+  <icon src="www/images/icon/icon-48-mdpi.png" gap:platform="android" gap:qualifier="mdpi"/>
+  <icon src="www/images/icon/icon-72-hdpi.png" gap:platform="android" gap:qualifier="hdpi"/>
+  <icon src="www/images/icon/icon-96-xhdpi.png" gap:platform="android" gap:qualifier="xhdpi"/>
+  <icon src="www/images/icon/xxhdpi.png" gap:platform="android" gap:qualifier="xxhdpi" />
+<!--   <icon src="fr-xxhdpi.png" gap:platform="android" gap:qualifier="fr-xxhdpi" />  -->
+<!-- android end-->
+  <icon src="www/images/icon/blackberry/icon-80.png" gap:platform="blackberry"/>
   <icon src="www/res/icon/blackberry/icon-80.png" gap:platform="blackberry" gap:state="hover"/>
   <icon src="www/res/icon/ios/icon-57.png" gap:platform="ios" width="57" height="57"/>
   <icon src="www/res/icon/ios/icon-72.png" gap:platform="ios" width="72" height="72"/>
   <icon src="www/res/icon/ios/icon-57-2x.png" gap:platform="ios" width="114" height="114"/>
   <icon src="www/res/icon/ios/icon-72-2x.png" gap:platform="ios" width="144" height="144"/>
   <icon src="www/res/icon/webos/icon-64.png" gap:platform="webos"/>
-  <icon src="www/res/icon/windows-phone/icon-48.png" gap:platform="winphone"/>
-  <icon src="www/res/icon/windows-phone/icon-173-tile.png" gap:platform="winphone" gap:role="background"/>
-  <gap:splash src="www/res/screen/android/screen-ldpi-portrait.png" gap:platform="android" gap:qualifier="port-ldpi"/>
-  <gap:splash src="www/res/screen/android/screen-mdpi-portrait.png" gap:platform="android" gap:qualifier="port-mdpi"/>
-  <gap:splash src="www/res/screen/android/screen-hdpi-portrait.png" gap:platform="android" gap:qualifier="port-hdpi"/>
-  <gap:splash src="www/res/screen/android/screen-xhdpi-portrait.png" gap:platform="android" gap:qualifier="port-xhdpi"/>
+  <!-- windows -->
+  <icon src="www/images/icon/win-icon-48.png" gap:platform="winphone"/>
+  <icon src="www/images/icon/icon-173-tile.png" gap:platform="winphone" gap:role="background"/>
+  <!-- windows end -->
+                                                <!--splash screen-->
+<!-- android -->
+  <gap:splash src="www/images/screen/screen-ldpi-portrait.png" gap:platform="android" gap:qualifier="port-ldpi"/>
+  <gap:splash src="www/images/screen/screen-mdpi-portrait.png" gap:platform="android" gap:qualifier="port-mdpi"/>
+  <gap:splash src="www/images/screen/screen-hdpi-portrait.png" gap:platform="android" gap:qualifier="port-hdpi"/>
+  <gap:splash src="www/images/screen/screen-xhdpi-portrait.png" gap:platform="android" gap:qualifier="port-xhdpi"/>
+<!-- src -->
+<gap:splash src="www/images/screen/fr-xhdpi.png" gap:platform="android" gap:qualifier="fr-xhdpi" />
+<gap:splash src="www/images/screen/portrait-xxhdpi.png" gap:platform="android" gap:qualifier="port-xxhdpi" />
+<gap:splash src="www/images/screen/landscape-xxhdpi.png" gap:platform="android" gap:qualifier="land-xxhdpi" />
+<!-- src end-->
+<!-- android end-->
   <gap:splash src="www/res/screen/blackberry/screen-225.png" gap:platform="blackberry"/>
   <gap:splash src="www/res/screen/ios/screen-iphone-portrait.png" gap:platform="ios" width="320" height="480"/>
   <gap:splash src="www/res/screen/ios/screen-iphone-portrait-2x.png" gap:platform="ios" width="640" height="960"/>
   <gap:splash src="www/res/screen/ios/screen-iphone-portrait-568h-2x.png" gap:platform="ios" width="640" height="1136"/>
   <gap:splash src="www/res/screen/ios/screen-ipad-portrait.png" gap:platform="ios" width="768" height="1024"/>
   <gap:splash src="www/res/screen/ios/screen-ipad-landscape.png" gap:platform="ios" width="1024" height="768"/>
+  <!-- windows -->  
   <gap:splash src="www/res/screen/windows-phone/screen-portrait.jpg" gap:platform="winphone"/>
+  <!-- src -->
+  <gap:splash src="splash/winphone/splash.jpg" gap:platform="winphone" />
+  <!-- src -->
+   <!-- windows end--> 
   <access origin="*"/>
 </widget>

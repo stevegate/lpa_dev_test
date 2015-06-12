@@ -599,20 +599,7 @@ background-size: 100% 100%;
 
 /*may 8*/
 
-.texs {
-    text-align: center;
-    margin-top: 0px !important;
-    font-size: 14px;
-/*may 8*/
-   text-align: center;
-  margin-top: 55px !important;
-  font-size: 14px;
-  position: static !important;
-  padding: .4em 1em;
-  overflow: hidden;
-  display: block;
-  clear: both;
-}
+
 .pod{
   padding:0px !important;
  /* padding-top:10px !important;*/
@@ -620,18 +607,7 @@ background-size: 100% 100%;
 .mru{
   margin-bottom: 50px;
 }
-.texsa{
-    text-align: center;
-  margin-top: 15px !important;
-  font-size: 14px;
-  position: static !important;
-  padding: .4em 1em;
-  overflow: hidden;
-  display: block;
-  clear: both;
-    margin-left: 0% !important;
-  margin-right: 0% !important;
-}
+
 .texsb{
   text-align: center;
   margin-top: -1px !important;
@@ -651,19 +627,7 @@ background-size: 100% 100%;
   padding: 1em;
   margin-top: -70px;
 }
-.texsc{
-    text-align: center;
-  margin-top: 0px !important;
-  font-size: 14px;
-  text-align: center;
-  /* margin-top: 55px !important; */
-  font-size: 14px;
-  position: static !important;
-  padding: .4em 1em;
-  overflow: hidden;
-  display: block;
-  clear: both;
-}
+
 .poda{
     padding: 0px !important;
   padding-top: 55px !important;
@@ -713,4 +677,49 @@ background-size: 100% 100%;
 .texs {
    font-size: 120% !important;
   }
+}
+/*june 12*/
+.texsa{
+  text-align: center;
+  margin-top: 15px !important;
+  font-size: 14px;
+  position: static !important;
+  padding: .4em 1em;
+  overflow: hidden;
+  display: block;
+  clear: both;
+  margin-left: -15px !important;
+  margin-right: 0% !important;
+  width: 100% !important;
+} 
+.texs {
+    text-align: center;
+    margin-top: 0px !important;
+    font-size: 14px;
+   text-align: center;
+  margin-top: 55px !important;
+  font-size: 14px;
+  position: static !important;
+  padding: .4em 1em;
+  overflow: hidden;
+  display: block;
+  clear: both;
+    margin-left: -15px !important;
+     width: 100% !important;
+}
+.texsc{
+    text-align: center;
+  margin-top: 0px !important;
+  font-size: 14px;
+  text-align: center;
+  /* margin-top: 55px !important; */
+  font-size: 14px;
+  position: static !important;
+  padding: .4em 1em;
+  overflow: hidden;
+  display: block;
+  clear: both;
+    margin-top: -15px !important;
+     margin-left: -15px !important;
+     width: 100% !important;
 }
