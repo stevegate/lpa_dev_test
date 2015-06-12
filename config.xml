@@ -34,7 +34,6 @@
   <icon src="www/images/icon/icon-72-hdpi.png" gap:platform="android" gap:qualifier="hdpi"/>
   <icon src="www/images/icon/icon-96-xhdpi.png" gap:platform="android" gap:qualifier="xhdpi"/>
   <icon src="www/images/icon/xxhdpi.png" gap:platform="android" gap:qualifier="xxhdpi" />
-<!--   <icon src="fr-xxhdpi.png" gap:platform="android" gap:qualifier="fr-xxhdpi" />  -->
 <!-- android end-->
   <icon src="www/images/icon/blackberry/icon-80.png" gap:platform="blackberry"/>
   <icon src="www/res/icon/blackberry/icon-80.png" gap:platform="blackberry" gap:state="hover"/>
@@ -53,11 +52,11 @@
   <gap:splash src="www/images/screen/screen-mdpi-portrait.png" gap:platform="android" gap:qualifier="port-mdpi"/>
   <gap:splash src="www/images/screen/screen-hdpi-portrait.png" gap:platform="android" gap:qualifier="port-hdpi"/>
   <gap:splash src="www/images/screen/screen-xhdpi-portrait.png" gap:platform="android" gap:qualifier="port-xhdpi"/>
-<!-- src -->
+<!-- android icon not added-->
 <gap:splash src="www/images/screen/fr-xhdpi.png" gap:platform="android" gap:qualifier="fr-xhdpi" />
 <gap:splash src="www/images/screen/portrait-xxhdpi.png" gap:platform="android" gap:qualifier="port-xxhdpi" />
 <gap:splash src="www/images/screen/landscape-xxhdpi.png" gap:platform="android" gap:qualifier="land-xxhdpi" />
-<!-- src end-->
+<!-- android icon not added end-->
 <!-- android end-->
   <gap:splash src="www/res/screen/blackberry/screen-225.png" gap:platform="blackberry"/>
   <gap:splash src="www/res/screen/ios/screen-iphone-portrait.png" gap:platform="ios" width="320" height="480"/>
@@ -66,10 +65,7 @@
   <gap:splash src="www/res/screen/ios/screen-ipad-portrait.png" gap:platform="ios" width="768" height="1024"/>
   <gap:splash src="www/res/screen/ios/screen-ipad-landscape.png" gap:platform="ios" width="1024" height="768"/>
   <!-- windows -->  
-  <gap:splash src="www/res/screen/windows-phone/screen-portrait.jpg" gap:platform="winphone"/>
-  <!-- src -->
-  <gap:splash src="splash/winphone/splash.jpg" gap:platform="winphone" />
-  <!-- src -->
+  <gap:splash src="www/images/screen/screen-portrait.jpg" gap:platform="winphone"/>
    <!-- windows end--> 
   <access origin="*"/>
 </widget>
