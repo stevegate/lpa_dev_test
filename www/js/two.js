@@ -51,7 +51,7 @@
 							if(result[0]){
 								alert('details submitted successfully');
 								$("#feedback_form").trigger('reset');
-								$('#myPopup').popup('close'); 
+								$('#mpopup').popup('close'); 
 							}else {
 								alert('Network error has occurred please try again!');
 
