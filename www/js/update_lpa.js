@@ -1,5 +1,5 @@
 var up_currentpage=1;
-var up_pagelimit =5;
+var up_pagelimit =6;
 var up_total = 0;
 var up_totalpage=0;
 $(document).one('pagecreate', '#update_lpa', function(){  
@@ -126,10 +126,10 @@ function assignValues(){
 }
 up_total = c;
 
-if((up_total+1)%5>0){
-	up_totalpage = Math.floor((up_total+1)/5)+1;
+if((up_total+1)%6>0){
+	up_totalpage = Math.floor((up_total+1)/6)+1;
 }else {
-	up_totalpage = Math.floor((up_total+1)/5);
+	up_totalpage = Math.floor((up_total+1)/6);
 }
 hidestyle(0,up_total);
 applystyle(0,4);
@@ -174,7 +174,7 @@ function readvalues(){
 }
 
 function hidefield(){
-	for(a=0;a<5;a++){
+	for(a=0;a<6;a++){
 		$('#up_findings'+a).css({'display':'none'});
 		$('#up_responsibility'+a+'-button').css({'display':'none'});
 		$('#up_responsibility'+a).css({'display':'none'});
@@ -213,15 +213,15 @@ function pagination2(){
 	}
 
 	if(up_currentpage>1 && up_currentpage<up_totalpage){
-		start = (up_currentpage-1)*5;
-		end =((up_currentpage)*5)-1;
+		start = (up_currentpage-1)*6;
+		end =((up_currentpage)*6)-1;
 		enablebutton($("#update_prev"),$("#update_next"),'');
 		disablebutton('','',$("#lpa_update_btn"));
 
 		hidestyle(0,up_total);
 		applystyle(start,end);
 	}else {
-		start = (up_currentpage-1)*5;
+		start = (up_currentpage-1)*6;
 		end = up_total;
 		enablebutton($("#update_prev"),'',$("#lpa_update_btn"));
 		disablebutton('',$("#update_next"),'');
@@ -236,8 +236,8 @@ function pagination1(){
 		up_currentpage = 1;	
 	}
 	if(up_currentpage>1 && up_currentpage<up_totalpage){
-start = (up_currentpage-1)*5;
-end =((up_currentpage)*5)-1;
+start = (up_currentpage-1)*6;
+end =((up_currentpage)*6)-1;
 enablebutton($("#update_prev"),$("#update_next"),'');
 disablebutton('','',$("#lpa_update_btn"));
 hidestyle(0,up_total);
@@ -246,7 +246,7 @@ applystyle(start,end);
 	enablebutton('',$("#update_next"),'');
 	disablebutton($("#update_prev"),'',$("#lpa_update_btn"));
 	start=0;
-	end = ((up_currentpage)*5)-1;
+	end = ((up_currentpage)*6)-1;
 	hidestyle(0,up_total);
 	applystyle(start,end);
 }
