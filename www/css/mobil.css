@@ -240,8 +240,8 @@ margin: -10px 10px 0px !important;
 
 }
 [class*=ui-block-]>.ui-btn, [class*=ui-block-]>.ui-select, [class*=ui-block-]>.ui-checkbox, [class*=ui-block-]>.ui-radio, [class*=ui-block-]>button.ui-btn-inline, [class*=ui-block-]>button.ui-btn-icon-notext, .ui-header [class*=ui-block-]>button.ui-btn, .ui-footer [class*=ui-block-]>button.ui-btn {
-  margin-right: .3125em;
-  margin-left: 1.50em;
+  /* margin-right: .3125em;
+  margin-left: 0.50em; */
 }
 
 .ui-page-theme-a .but{background-color: #007030 !important ;color: #ffffff !important;text-shadow:none !important;
@@ -723,4 +723,13 @@ background-size: 100% 100%;
     margin-top: -15px !important;
      margin-left: -15px !important;
      width: 100% !important;
+}
+
+
+.ui-checkbox input, .ui-radio input {
+  left: 0em !important;
+}
+.ui-page-theme-a .radp{
+padding-left: 5%;
+padding-right: 5%;
 }
