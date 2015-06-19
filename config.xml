@@ -1,4 +1,4 @@
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.advs.manhummel.lpa" version="1.0.4">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.advs.manhummel.lpa" version="1.0.5">
   <name>LPA</name>
   <description>LPA App by Mann Hummel</description>
   <author href="http://advicesync.com" email="support@advicesync.com">eImpressive</author>
@@ -88,7 +88,7 @@
     <!-- ios -->
   <gap:splash src="www/images/screen/screen-iphone-portrait.png" gap:platform="ios" width="320" height="480"/>
   <gap:splash src="www/images/screen/screen-iphone-portrait-2x.png" gap:platform="ios" width="640" height="960"/>
-  <gap:splash src="www/images/screen/Default-568h@2x.png" gap:platform="ios" width="640" height="1136"/>
+  <gap:splash src="Default-568h@2x.png" gap:platform="ios" width="640" height="1136"/>
   <gap:splash src="www/images/screen/screen-ipad-portrait.png" gap:platform="ios" width="768" height="1024"/>
   <gap:splash src="www/images/screen/screen-ipad-landscape.png" gap:platform="ios" width="1024" height="768"/>
 
