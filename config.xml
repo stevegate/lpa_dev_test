@@ -1,4 +1,4 @@
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.advs.manhummel.lpa" version="1.0.2">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.advs.manhummel.lpa" version="1.0.3">
   <name>LPA</name>
   <description>LPA App by Mann Hummel</description>
   <author href="http://advicesync.com" email="support@advicesync.com">eImpressive</author>
@@ -37,11 +37,13 @@
 <!-- android end-->
   <icon src="www/images/icon/blackberry/icon-80.png" gap:platform="blackberry"/>
   <icon src="www/res/icon/blackberry/icon-80.png" gap:platform="blackberry" gap:state="hover"/>
+
+
   <!-- ios -->
-  <icon src="www/images/icon/icon-57.png" gap:platform="ios" width="57" height="57"/>
+  <icon src="www/images/icon/icon.png" gap:platform="ios" width="57" height="57"/>
   <icon src="www/images/icon/icon-72.png" gap:platform="ios" width="72" height="72"/>
-  <icon src="www/images/icon/icon-57-2x.png" gap:platform="ios" width="114" height="114"/>
-  <icon src="www/images/icon/icon-72-2x.png" gap:platform="ios" width="144" height="144"/>
+  <icon src="www/images/icon/icon@2x.png" gap:platform="ios" width="114" height="114"/>
+  <icon src="www/images/icon/icon-72@2x.png" gap:platform="ios" width="144" height="144"/>
 
   <icon src="www/images/icon/icon-60@3x.png" gap:platform="ios" width="180" height="180" />
 
@@ -86,7 +88,7 @@
     <!-- ios -->
   <gap:splash src="www/images/screen/screen-iphone-portrait.png" gap:platform="ios" width="320" height="480"/>
   <gap:splash src="www/images/screen/screen-iphone-portrait-2x.png" gap:platform="ios" width="640" height="960"/>
-  <gap:splash src="www/images/screen/screen-iphone-portrait-568h-2x.png" gap:platform="ios" width="640" height="1136"/>
+  <gap:splash src="www/images/screen/Default-568h@2x.png" gap:platform="ios" width="640" height="1136"/>
   <gap:splash src="www/images/screen/screen-ipad-portrait.png" gap:platform="ios" width="768" height="1024"/>
   <gap:splash src="www/images/screen/screen-ipad-landscape.png" gap:platform="ios" width="1024" height="768"/>
 
