@@ -93,6 +93,10 @@
   <!-- windows -->
   <icon src="www/images/icon/win-icon-48.png" gap:platform="winphone"/>
   <icon src="www/images/icon/icon-173-tile.png" gap:platform="winphone" gap:role="background"/>
+    <icon src="Background.png" gap:platform="winphone"/>
+  <icon src="Background.png" gap:platform="winphone" gap:role="background"/>
+      <icon src="ApplicationIcon.png" gap:platform="winphone"/>
+  <icon src="ApplicationIcon.png" gap:platform="winphone" gap:role="background"/>
   <!-- windows end -->
                                                 <!--splash screen-->
 <!-- android -->
