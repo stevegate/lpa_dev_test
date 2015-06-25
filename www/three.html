@@ -20,17 +20,15 @@
 </head>
 <body>
 <!--main page-->
-<div  data-role="page" id="pagethree">    
-
-<!--navbar -->   
-<div data-role="navbar" data-grid="c" data-theme="e">
+<div  data-role="page" id="pagethree">  
+<div data-role="navbar" data-grid="c" data-theme="e" class="fix">
     <ul>
-        <li class="nav"><a href="#" id="three_logo"><img src="images/logoa.png" class="im imj"></a></li>
-        <li class="nava foon2" id="employee_name_three"></li>
-        <li class="navb foon2" id="employee_id_three"></li>
+        <li class="nav" ><a href="#" id="three_logo"><img src="images/logoa.png" class="im imj"></a></li>
+        <li class="nava foon2" id="employee_name_three">Employee Name</li>
+        <li class="navb foon2" id="employee_id_three">Personal ID</li>
         <li class="navc"><a href="#overlayPanel_three">  <span><button class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bars babut"></button></span></a></li>
     </ul>
-</div><!-- /navbar end-->
+</div><!-- /navbar end-->  
 
 <!--panel slider-->
 <div data-role="panel" id="overlayPanel_three" data-display="overlay" data-position="right" data-dismissible="true" data-swipe-close="false"> 
@@ -42,7 +40,7 @@
 </div> <!--page slider end-->
 
 <!--content page-->
-<div data-role="main" class="ui-content" >
+<div data-role="main" class="ui-content confithree" >
 <script src="js/three.js"></script>
   <script type="text/javascript" src="js/mobipick.js"></script>
    <script type="text/javascript" src="external/xdate.js"></script> 
@@ -93,7 +91,7 @@
 <br>
 <br>
 <!--footer-->
-<div data-role="footer">
+<div data-role="footer" class="fofi">
 <marquee>LPA Tool by Service Center India</marquee>
 </div>  
 <!--footer end-->

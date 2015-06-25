@@ -81,7 +81,7 @@ return false;
 function assignValues(){
 	userobject = 	JSON.parse(sessionStorage.getItem("user_data"));	
 
-	$('#emplyee_name_updatelpa').text(''+userobject.firstname+' '+userobject.lastname);
+	$('#emplyee_name_updatelpa').text(userobject.firstname);
 	$('#emplyee_id_updatelpa').text(userobject.username);
 	category_array = 	JSON.parse(sessionStorage.getItem("update_category_data"));	
 	activity_array = 	JSON.parse(sessionStorage.getItem("update_activity_data"));	

@@ -105,7 +105,7 @@ function assignValues(){
 	$country = $('#country')
 	userobject = 	JSON.parse(sessionStorage.getItem("user_data"));	
 	plant_array = 	JSON.parse(sessionStorage.getItem("plant_data"));	
-	$('#update_one_employee_name').text(''+userobject.firstname+' '+userobject.lastname);
+	$('#update_one_employee_name').text(userobject.firstname);
 	$('#update_one_employee_id').text(userobject.username);
 	var cont='<span class="mo" >'+userobject.firstname+'</span> <span class="mo" id="employeeid">   Id :'+userobject.firstname+'</span>';			
 

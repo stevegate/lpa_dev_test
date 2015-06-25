@@ -13,17 +13,14 @@
 <div data-role="page" id="pagetwo">
 
 <script src="js/two.js"></script>
-
-<div data-role="navbar" data-grid="c" data-theme="e" class="fixh">
+<div data-role="navbar" data-grid="c" data-theme="e" class="fix">
     <ul>
-        <li class="nav"><a href="#" ><img src="images/logoa.png" class="im imj"></a></li>
+        <li class="nav" ><a href="#" ><img src="images/logoa.png" class="im imj"></a></li>
         <li class="nava foon2" id="emplyee_name_two">Employee Name</li>
         <li class="navb foon2" id="emplyee_id_two">Personal ID</li>
         <li class="navc"><a href="#overlayPanel">  <span><button class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bars babut"></button></span></a></li>
     </ul>
-</div><!-- navbar end--> 
-<!--nav bar-->
-
+</div><!-- /navbar end-->
 <!--slide panel menu-->  
 <div data-role="panel" id="overlayPanel" data-display="overlay" data-position="right" data-dismissible="true" data-swipe-close="false"> 
       <ul data-role="listview" data-inset="true">
@@ -37,7 +34,14 @@
 <!--slide panel menu end-->  
 
 <!--content page-->
-<div data-role="main" class="ui-content fixu">
+<div data-role="main" class="ui-content confi">
+<div class="ui-grid-solo">
+<div class="ui-block-a hei" >
+
+</div>
+</div>
+<div class="ui-grid-solo">
+<div class="ui-block-a" >
 
 <h2 class="cen">Dear Auditor,</h2>
 <hr>
@@ -55,6 +59,8 @@ Thanks for testing and providing feedback.
 For any queries please contact Mr Anand Kushwaha via email anand.kushwaha@mann-hummel.com
 </p>
 <br>
+</div>
+</div>
 <div class="cena">
  <a href="#mpopup" data-rel="popup" data-position-to="window" data-transition="flip" class="ui-btn fed" >Feedback</a>
 </div>
@@ -70,8 +76,9 @@ For any queries please contact Mr Anand Kushwaha via email anand.kushwaha@mann-h
 <br>
 </div><!--content page end-->
 <!--footer-->
-<div data-role="footer" class="fixf"><!--footer-->
+<div data-role="footer" class="fixf fofi"><!--footer-->
 <marquee>LPA Tool by Service Center India</marquee>
+
 </div>  <!--footer end-->
 </div> <!--main page end-->
 </body>

@@ -25,15 +25,14 @@
 <!--main page-->
 <div data-role="page" id="profile" class="bav">    
 <!--navbar -->   
-<div data-role="navbar" data-grid="c" data-theme="e">
+<div data-role="navbar" data-grid="c" data-theme="e" class="fix">
     <ul>
-        <li class="nav" id="profile_logo"><a href="#"  ><img src="images/logoa.png" class="im imj"></a></li>
-        <li class="nava" id="profile_employee_name"></li>
-        <li class="navb" id="profile_employee_id"></li>
-        <li class="navc"><a href="#overlayPanel_profile"> 
-        <span><button class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bars babut"></button></span></a></li>
+        <li class="nav" ><a href="#" id="profile_logo"><img src="images/logoa.png" class="im imj"></a></li>
+        <li class="nava foon2" id="profile_employee_name">Employee Name</li>
+        <li class="navb foon2" id="profile_employee_id">Personal ID</li>
+        <li class="navc"><a href="#overlayPanel_profile">  <span><button class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bars babut"></button></span></a></li>
     </ul>
-</div><!-- /navbar end-->
+</div><!-- /navbar end-->  
 
 <!--panel slider-->
 <div data-role="panel" id="overlayPanel_profile" data-display="overlay" data-position="right" data-dismissible="true" data-swipe-close="false"> 
@@ -45,7 +44,7 @@
 </div> <!--page slider end-->
 
 <!--content page-->
-<div data-role="main" class="ui-content">
+<div data-role="main" class="ui-content confipro">
   <script src="js/profile.js"></script>
   <p class="cen4">My Profile </p>
   
@@ -62,7 +61,7 @@
 
 </div><!--content div end-->
 
-<div data-role="footer"><!--footer-->
+<div data-role="footer" class="fofi"><!--footer-->
 <marquee>LPA Tool by Service Center India</marquee>
 </div>  <!--footer end-->
 </div> <!---main div page-->

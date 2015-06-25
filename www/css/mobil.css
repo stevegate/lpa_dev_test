@@ -621,13 +621,7 @@ background-size: 100% 100%;
   margin-left: 0% !important;
   margin-right: 0% !important;
 }
-.cin{
-    border-width: 0;
-  overflow: visible;
-  overflow-x: hidden;
-  padding: 1em;
-  margin-top: -70px;
-}
+
 
 .poda{
     padding: 0px !important;
@@ -745,3 +739,48 @@ padding-right: 5%;
     position: fixed;
   width: 100%;
 }*/
+.navfix{
+  position:fixed;
+  width: inherit;
+}
+.navcon{
+    padding-top: 50px;
+}
+.ui-navbar li:last-child .ui-btn{
+  margin-right: -14px !important;
+    padding-top: 2.5em!important;
+}
+/*.ui-navbar li:last-child .ui-btn {
+  margin-right: -14px !important;
+  padding-top: 1.5em!important;
+}*/
+.ove{
+  margin-top: 25px !important;
+}
+.confi{
+  margin-top: 10%;
+}
+.confithree{
+  margin-top: 50px;
+}
+/*.cin{
+    border-width: 0;
+  overflow: visible;
+  overflow-x: hidden;
+  padding: 1em;
+  margin-top: -70px;
+}*/
+.cin{
+    border-width: 0;
+  overflow: visible;
+  overflow-x: hidden;
+  padding: 1em;
+  margin-top: -20px;
+}
+ .confipro{ 
+  margin-top: 40px;
+  }
+.fofi{
+  height:2%;
+  padding-bottom: 4%;
+}

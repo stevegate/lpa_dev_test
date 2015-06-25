@@ -47,7 +47,7 @@ return false;
 });
 function assignProfileValues(){
 userobject = 	JSON.parse(sessionStorage.getItem("user_data"));
-$('#profile_employee_name').text(''+userobject.firstname+' '+userobject.lastname);
+$('#profile_employee_name').text(userobject.firstname);
 $('#profile_employee_id').text(userobject.username);
 
 $('#profile_empid').text('Employee Id    : '+userobject.username+'');
