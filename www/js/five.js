@@ -181,10 +181,13 @@ for(a=0;a<category_array.length;a++){
 }
 userdata = JSON.parse(sessionStorage.getItem("user_data"));
 $("#activityval").val(act_val);
+$("#region").val(JSON.parse(sessionStorage.getItem("region")));
+$("#country").val(JSON.parse(sessionStorage.getItem("country")));
 $("#plant_id").val(JSON.parse(sessionStorage.getItem("plant_name")));
 $("#part_id").val(JSON.parse(sessionStorage.getItem("partno")));
 $("#shift").val(JSON.parse(sessionStorage.getItem("shift")));
 $("#user_id").val(JSON.parse(userdata.user_id));
+
 }
 function hidefield(){
 	for(a=0;a<6;a++){

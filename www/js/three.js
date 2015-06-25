@@ -1,11 +1,15 @@
 $(document).one('pageshow', '#pagethree', function(e, data){ 
 assignValues();
 $(document).off('click', '#next1').on('click', '#next1', function(e2) {
-	if($("#plant_name").val()!="0" && $("#partno").val().length>0 && $("#shift").val()!="0"){ 
+	if($("#region").val().length>0 && $("#country").val().length>0 && $("#plant_name").val().length>0 && $("#partno").val().length>0 && $("#shift").val()!="0"){ 
+		
+		sessionStorage.setItem("region",JSON.stringify($("#region").val()));
+		sessionStorage.setItem("country",JSON.stringify($("#country").val()));
 		sessionStorage.setItem("plant_name",JSON.stringify($("#plant_name").val()));
 		sessionStorage.setItem("partno",JSON.stringify($("#partno").val()));
 		sessionStorage.setItem("datepicker",JSON.stringify($("#datepicker").val()));
-		sessionStorage.setItem("shift",JSON.stringify($("#shift").val()));
+		sessionStorage.setItem("shift",JSON.stringify($("#shift").val()));	
+
 		$.mobile.changePage("five.html", { transition: "none", changeHash: true, reverse: false});
 	}else {
 		$( "#popupcreatelpa" ).popup("open");
