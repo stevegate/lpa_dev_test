@@ -1,4 +1,4 @@
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.advs.manhummel.lpa" version="1.0.6">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.advs.manhummel.lpa" version="1.0.7">
   <name>LPA</name>
   <description>LPA App by Mann Hummel</description>
   <author href="http://advicesync.com" email="support@advicesync.com">eImpressive</author>
@@ -86,21 +86,21 @@
 
   <gap:splash src="www/res/screen/blackberry/screen-225.png" gap:platform="blackberry"/>
     <!-- ios -->
-  <gap:splash src="www/images/screen/screen-iphone-portrait.png" gap:platform="ios" width="320" height="480"/>
-  <gap:splash src="www/images/screen/screen-iphone-portrait-2x.png" gap:platform="ios" width="640" height="960"/>
+  <gap:splash src="screen-iphone-portrait.png" gap:platform="ios" width="320" height="480"/>
+  <gap:splash src="screen-iphone-portrait-2x.png" gap:platform="ios" width="640" height="960"/>
   <gap:splash src="Default-568h@2x.png" gap:platform="ios" width="640" height="1136"/>
-  <gap:splash src="www/images/screen/screen-ipad-portrait.png" gap:platform="ios" width="768" height="1024"/>
-  <gap:splash src="www/images/screen/screen-ipad-landscape.png" gap:platform="ios" width="1024" height="768"/>
+  <gap:splash src="screen-ipad-portrait.png" gap:platform="ios" width="768" height="1024"/>
+  <gap:splash src="screen-ipad-landscape.png" gap:platform="ios" width="1024" height="768"/>
 
 <!-- iPhone 6 -->
-<gap:splash src="www/images/screen/Default-667h@2x.png" gap:platform="ios" width="750" height="1334" />
-<gap:splash src="www/images/screen/Default-Portrait-736h@3x.png" gap:platform="ios" width="1242" height="2208" />
-<gap:splash src="www/images/screen/Default-Landscape-736h@3x.png" gap:platform="ios" width="2208" height="1242" />
+<gap:splash src="Default-667h@2x.png" gap:platform="ios" width="750" height="1334" />
+<gap:splash src="Default-Portrait-736h@3x.png" gap:platform="ios" width="1242" height="2208" />
+<gap:splash src="Default-Landscape-736h@3x.png" gap:platform="ios" width="2208" height="1242" />
 
 
 <!-- Retina iPad -->
-<gap:splash src="www/images/screen/Default-Portrait@2x.png" gap:platform="ios" width="1536" height="2048" />
-<gap:splash src="www/images/screen/Default-Landscape@2x.png" gap:platform="ios" width="2048" height="1536" />
+<gap:splash src="Default-Portrait@2x.png" gap:platform="ios" width="1536" height="2048" />
+<gap:splash src="Default-Landscape@2x.png" gap:platform="ios" width="2048" height="1536" />
    <!-- ios end-->
   <!-- windows -->  
   <gap:splash src="www/images/screen/screen-portrait.jpg" gap:platform="winphone"/>
