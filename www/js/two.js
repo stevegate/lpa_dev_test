@@ -1,7 +1,7 @@
 		$(document).one('pageshow', '#pagetwo', function(){  
 
 		userobject = 	JSON.parse(sessionStorage.getItem("user_data"));	
-		$('#emplyee_name_two').text(''+userobject.firstname+' '+userobject.lastname);
+		$('#emplyee_name_two').text(userobject.firstname);
 		$('#emplyee_id_two').text(userobject.username);
 		ScaleContentToDevice();
 

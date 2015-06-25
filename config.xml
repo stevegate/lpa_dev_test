@@ -1,4 +1,4 @@
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.advs.manhummel.lpa" version="1.0.7">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.advs.manhummel.lpa" version="1.0.8">
   <name>LPA</name>
   <description>LPA App by Mann Hummel</description>
   <author href="http://advicesync.com" email="support@advicesync.com">eImpressive</author>
@@ -27,6 +27,29 @@
   <gap:plugin name="org.apache.cordova.network-information"/>
   <gap:plugin name="org.apache.cordova.splashscreen"/>
   <plugin name="DatePickerPlugin" value="com.bikasv.plugins.datepicker.DatePickerPlugin"/>
+
+<!-- iOS Specific Fixes -->
+  <gap:plugin name="com.phonegap.plugin.statusbar" />
+
+  <preference name="StatusBarOverlaysWebView" value="true" />
+  <preference name="StatusBarBackgroundColor" value="#000000" />
+
+  <gap:config-file platform="ios" parent="UIStatusBarHidden">
+    <true/>
+</gap:config-file>
+
+<gap:config-file platform="ios" parent="UIViewControllerBasedStatusBarAppearance">
+    <false/>
+</gap:config-file>
+
+ <feature name="StatusBar">
+            <param name="ios-package" value="CDVStatusBar" onload="true" />
+ </feature>
+
+  <preference name="webviewbounce" value="false" />
+  <preference name="DisallowOverscroll" value="true" />
+  <preference name="UIWebViewBounce" value="false" />
+
   <icon src="icon.png"/>
 <!-- android -->
   <icon src="www/images/icon/icon-36-ldpi.png" gap:platform="android" gap:qualifier="ldpi"/>

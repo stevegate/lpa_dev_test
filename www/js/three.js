@@ -51,7 +51,7 @@ function assignValues(){
 	plant_array = 	JSON.parse(sessionStorage.getItem("plant_data"));
 	category_array = sessionStorage.getItem("category_data");	
 	response4 = sessionStorage.getItem("activity_data");	
-	$('#employee_name_three').text(''+userobject.firstname+' '+userobject.lastname);
+	$('#employee_name_three').text(userobject.firstname);
 	$('#employee_id_three').text(userobject.username);
 	var cont='<span class="mo" >'+userobject.firstname+'</span> <span class="mo" id="employeeid">   Id :'+userobject.firstname+'</span>'
 	console.log('page2');

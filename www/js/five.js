@@ -102,7 +102,7 @@ $(document).off('click', '#page_five_update').on('click', '#page_five_update', f
 function assignValues(){
 	userobject = 	JSON.parse(sessionStorage.getItem("user_data"));	
 
-	$('#emplyee_name_five').text(''+userobject.firstname+' '+userobject.lastname);
+	$('#emplyee_name_five').text(userobject.firstname);
 	$('#emplyee_id_five').text(userobject.username);
 
 	plant_array = 	JSON.parse(sessionStorage.getItem("plant_data"));	
