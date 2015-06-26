@@ -1,5 +1,5 @@
 <widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.advs.manhummel.lpa" version="1.0.9">
-  <name>LPA</name>
+  <name>LPA test</name>
   <description>LPA App by Mann Hummel</description>
   <author href="http://advicesync.com" email="support@advicesync.com">eImpressive</author>
   <content src="index.html"/>
@@ -93,9 +93,9 @@
   <!-- windows -->
   <icon src="www/images/icon/win-icon-48.png" gap:platform="winphone"/>
   <icon src="www/images/icon/icon-173-tile.png" gap:platform="winphone" gap:role="background"/>
-    <icon src="Background.png" gap:platform="winphone"/>
+ <!--    <icon src="Background.png" gap:platform="winphone"/> -->
   <icon src="Background.png" gap:platform="winphone" gap:role="background"/>
-      <icon src="ApplicationIcon.png" gap:platform="winphone"/>
+<!--       <icon src="ApplicationIcon.png" gap:platform="winphone"/> -->
   <icon src="ApplicationIcon.png" gap:platform="winphone" gap:role="background"/>
   <!-- windows end -->
                                                 <!--splash screen-->
@@ -131,9 +131,9 @@
    <!-- ios end-->
   <!-- windows -->  
   <gap:splash src="www/images/screen/screen-portrait.jpg" gap:platform="winphone"/>
-   <gap:splash src="Background.png" gap:platform="winphone"/>
-    <gap:splash src="screen-portrait.jpg" gap:platform="winphone"/>
-     <gap:splash src="ApplicationIcon.png" gap:platform="winphone"/>
+  <!--  <gap:splash src="Background.png" gap:platform="winphone"/> -->
+    <gap:splash src="SplashScreenImage.jpg" gap:platform="winphone"/>
+<!--      <gap:splash src="ApplicationIcon.png" gap:platform="winphone"/> -->
    <!-- windows end--> 
   <access origin="*"/>
 </widget>
