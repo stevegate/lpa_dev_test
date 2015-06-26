@@ -133,7 +133,7 @@
    <!-- ios end-->
   <!-- windows -->  
 <!--   <gap:splash src="images/screen/screen-portrait.jpg" gap:platform="winphone"/>-->
-    <gap:splash src="SplashScreenImage.jpg" gap:platform="winphone"/> 
+    <gap:splash src="splash.jpg" gap:platform="winphone"/> 
     <!-- <gap:splash src="images/screen/splash.jpg" gap:platform="winphone" /> -->
   <!-- windows end --> 
 
