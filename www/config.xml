@@ -132,9 +132,9 @@
 <gap:splash src="Default-Landscape@2x.png" gap:platform="ios" width="2048" height="1536" />
    <!-- ios end-->
   <!-- windows -->  
-  <gap:splash src="images/screen/screen-portrait.jpg" gap:platform="winphone"/>
-    <gap:splash src="SplashScreenImage.jpg" gap:platform="winphone"/>
-    <gap:splash src="images/winphone/splash.jpg" gap:platform="winphone" />
+<!--   <gap:splash src="images/screen/screen-portrait.jpg" gap:platform="winphone"/>
+    <gap:splash src="SplashScreenImage.jpg" gap:platform="winphone"/> -->
+    <gap:splash src="images/screen/splash.jpg" gap:platform="winphone" />
   <!-- windows end --> 
 
   <access origin="*"/>
